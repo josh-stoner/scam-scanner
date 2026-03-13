@@ -1,13 +1,363 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 49,
-  "average_score": 15.1,
+  "total": 60,
+  "average_score": 19.3,
   "by_verdict": {
-    "CAUTION": 12,
-    "LIKELY SCAM": 11,
-    "SCAM": 26
+    "CAUTION": 16,
+    "LIKELY SCAM": 16,
+    "SCAM": 28
   },
   "products": [
+    {
+      "id": 60,
+      "url": "https://www.moonjuice.com/products/superyou",
+      "domain": "moonjuice.com",
+      "product_name": "Moon Juice SuperYou",
+      "category": "Adaptogens",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 38,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "$49/month for adaptogen capsules",
+        "Claims to \"manage stress, improve focus, enhance mood\" from herbal blend",
+        "No clinical trials on the SuperYou formula",
+        "Celebrity-wellness branding (Gwyneth Paltrow adjacent)",
+        "Individual herb doses may be sub-therapeutic"
+      ],
+      "claims_extracted": [
+        "Daily stress management",
+        "Helps manage irritability and enhance mood",
+        "Supports focus and mental stamina",
+        "Clinically studied adaptogens"
+      ],
+      "evidence_check": "Contains ashwagandha, rhodiola, shatavari, and amla — each with some individual evidence. However, no clinical trial exists on the SuperYou formula. Individual herbs are available separately at much lower cost. The \"clinically studied adaptogens\" claim refers to individual ingredient research, not the product itself. Moon Juice aesthetic-wellness positioning inflates price significantly.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "Ashwagandha and rhodiola individual studies exist",
+        "No trials on SuperYou formula",
+        "Moon Juice pricing vs. individual herb cost"
+      ],
+      "verdict_summary": "Individual ingredients have some evidence, but no trials on this formula. $49/month for herbs available at fraction of cost. Aesthetic-wellness premium."
+    },
+    {
+      "id": 59,
+      "url": "https://www.goli.com/products/apple-cider-vinegar-gummies",
+      "domain": "goli.com",
+      "product_name": "Goli Apple Cider Vinegar Gummies",
+      "category": "General Wellness",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 28,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "ACV amount per gummy far below any studied dose",
+        "Gummy format adds sugar while claiming health benefits",
+        "Class-action lawsuit for misleading health claims",
+        "Claims weight loss, detox, and immune support from minimal ACV",
+        "\"As seen on\" celebrity marketing over evidence"
+      ],
+      "claims_extracted": [
+        "Supports digestion and gut health",
+        "Helps with weight management",
+        "Supports immune function",
+        "Apple cider vinegar benefits in gummy form"
+      ],
+      "evidence_check": "ACV clinical studies (limited) use tablespoon doses of liquid ACV. Goli gummies contain a fraction of that amount. A class-action lawsuit alleged misleading health claims. The gummy format adds sugar (2g per serving), partially negating any potential metabolic benefit. ACV evidence for weight loss or immune support is weak even at full doses.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "ACV dose studies require much higher amounts",
+        "Class-action lawsuit re: misleading health claims",
+        "NIH: ACV evidence review"
+      ],
+      "verdict_summary": "ACV dose far below any studied amount. Class-action lawsuit for misleading claims. Sugar-added gummies undermine health positioning."
+    },
+    {
+      "id": 58,
+      "url": "https://www.bloom.com/products/greens-superfoods",
+      "domain": "bloomnu.com",
+      "product_name": "Bloom Nutrition Greens & Superfoods",
+      "category": "General Wellness",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 33,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "TikTok-viral marketing with no clinical evidence",
+        "Claims digestive health, bloating reduction, immunity support from powder blend",
+        "Proprietary blend hides individual ingredient doses",
+        "Influencer-driven growth prioritized over R&D",
+        "\"Superfoods\" is an unregulated marketing term"
+      ],
+      "claims_extracted": [
+        "Supports digestive health and reduces bloating",
+        "Boosts energy and immunity",
+        "Contains probiotics and adaptogens",
+        "40+ nutrients in one scoop"
+      ],
+      "evidence_check": "No published clinical trials on the Bloom formula. \"Superfoods\" is not a scientific or regulatory term. Individual ingredients (probiotics, greens, adaptogens) have varying evidence, but proprietary blend prevents dose verification. The TikTok-driven marketing and influencer partnerships prioritize virality over science. Comparable to AG1 but at a lower price point.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "No clinical trials on Bloom formula",
+        "FDA: \"Superfood\" is not a regulated term",
+        "FTC influencer marketing guidelines"
+      ],
+      "verdict_summary": "TikTok-viral greens powder with no clinical evidence. Proprietary blend, influencer-driven marketing, and unregulated \"superfood\" claims."
+    },
+    {
+      "id": 57,
+      "url": "https://www.liquidiv.com/products/hydration-multiplier",
+      "domain": "liquidiv.com",
+      "product_name": "Liquid I.V. Hydration Multiplier",
+      "category": "Hydration / Electrolytes",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 58,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Claims \"2-3x more hydration\" based on narrow ORS comparison",
+        "\"Cellular Transport Technology\" is marketing rebrand of oral rehydration solution",
+        "Contains 11g sugar per serving",
+        "Premium pricing for electrolyte powder ($25/16 sticks)",
+        "Owned by Unilever — mass-market wellness branding"
+      ],
+      "claims_extracted": [
+        "Hydrate 2-3x faster than water alone",
+        "Cellular Transport Technology (CTT)",
+        "Non-GMO and made with premium ingredients",
+        "Clinically tested hydration"
+      ],
+      "evidence_check": "The \"Cellular Transport Technology\" is essentially oral rehydration solution (ORS) — a well-established WHO protocol for dehydration. ORS does enhance water absorption vs. plain water. However, the \"2-3x\" claim is based on ORS vs. water comparison, not unique to Liquid I.V. Any ORS-based drink would show similar results. Contains 11g sugar (similar to half a soda). The science is real but the branding implies proprietary innovation.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "WHO: Oral rehydration solution protocols",
+        "ORS efficacy is well-established",
+        "Liquid I.V. clinical study (company-funded)"
+      ],
+      "verdict_summary": "Real science (oral rehydration), but \"Cellular Transport Technology\" is marketing rebrand of WHO-standard ORS. Not proprietary innovation."
+    },
+    {
+      "id": 56,
+      "url": "https://www.shilajitresin.com",
+      "domain": "shilajitresin.com",
+      "product_name": "Pure Himalayan Shilajit Resin",
+      "category": "Adaptogens",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 22,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "Heavy metal contamination risk in unregulated shilajit products",
+        "Claims ancient Ayurvedic cure-all benefits",
+        "No standardization or quality control for fulvic acid content",
+        "Testosterone and energy claims lack human evidence",
+        "Unverifiable \"pure Himalayan\" sourcing claims"
+      ],
+      "claims_extracted": [
+        "Boosts testosterone naturally",
+        "Increases energy and stamina",
+        "Rich in fulvic acid and 85+ minerals",
+        "Ancient Ayurvedic superfood",
+        "Supports brain function and anti-aging"
+      ],
+      "evidence_check": "Shilajit has very limited clinical evidence. One small study (2016, 96 men) showed modest testosterone increase. However, shilajit products are notorious for heavy metal contamination (lead, arsenic, mercury) due to lack of standardization. \"Pure Himalayan\" sourcing is essentially unverifiable. The fulvic acid content and mineral claims are not standardized.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "Pandit et al. (2016): Shilajit testosterone study (small)",
+        "NIH: Heavy metal contamination in shilajit",
+        "FDA: No approved shilajit health claims"
+      ],
+      "verdict_summary": "Very limited evidence, significant heavy metal contamination risk, unverifiable sourcing. One small testosterone study exists but safety concerns outweigh potential benefits."
+    },
+    {
+      "id": 55,
+      "url": "https://www.forceofnatureclean.com",
+      "domain": "forceofnatureclean.com",
+      "product_name": "Force of Nature Cleaner",
+      "category": "Household / Wellness",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 68,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Electrolyzed water cleaning efficacy debated for heavy-duty use",
+        "EPA registration covers limited pathogen claims",
+        "Device + refill subscription model ($80 starter + ongoing)",
+        "Marketing implies hospital-grade disinfection for home use"
+      ],
+      "claims_extracted": [
+        "EPA registered disinfectant",
+        "Kills 99.9% of germs",
+        "Replaces all household cleaners",
+        "Non-toxic, no fragrances or dyes"
+      ],
+      "evidence_check": "Electrolyzed water (hypochlorous acid) is a legitimate, well-studied disinfectant used in healthcare and food safety. Force of Nature is EPA-registered. The chemistry is real. Concerns are around concentration consistency from a home device and whether it matches commercial-grade solutions. More legitimate than most products in this database.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "EPA registration for electrolyzed water",
+        "Block (2001): Hypochlorous acid disinfection efficacy",
+        "FDA: HOCl in wound care"
+      ],
+      "verdict_summary": "Legitimate chemistry (hypochlorous acid) with EPA registration. Real science, but home device may not match commercial-grade efficacy."
+    },
+    {
+      "id": 54,
+      "url": "https://www.mudwtr.com/products/mushroom-coffee",
+      "domain": "mudwtr.com",
+      "product_name": "MUD\\WTR Mushroom Coffee",
+      "category": "Functional Beverages",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 40,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Claims cognitive benefits from sub-therapeutic mushroom doses",
+        "Marketing positions as coffee replacement but contains caffeine",
+        "Lion's Mane and Chaga doses likely below studied amounts",
+        "Premium pricing ($60/month) for commodity mushroom blend"
+      ],
+      "claims_extracted": [
+        "Supports focus and energy without the jitters",
+        "Contains lion's mane, chaga, reishi, and cordyceps",
+        "Coffee alternative with 1/7th the caffeine",
+        "Supports natural energy and clarity"
+      ],
+      "evidence_check": "Contains adaptogenic mushrooms with preliminary but promising research (lion's mane, cordyceps). However, per-serving doses of individual mushrooms are likely sub-therapeutic compared to clinical studies. The product does contain caffeine (from black tea). Marketing is aspirational but not as egregious as pure scam products. Ingredient list is transparent.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "NIH: Lion's Mane neurogenesis studies (animal)",
+        "Examine.com: Cordyceps evidence",
+        "Product label ingredient transparency"
+      ],
+      "verdict_summary": "Transparent ingredients but mushroom doses likely sub-therapeutic. Premium price for what is essentially spiced tea with low caffeine."
+    },
+    {
+      "id": 53,
+      "url": "https://www.athleticgreens.com/en",
+      "domain": "athleticgreens.com",
+      "product_name": "AG1 (Athletic Greens)",
+      "category": "General Wellness",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 38,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "$99/month for greens powder",
+        "75 ingredients makes dose verification impossible",
+        "Podcast/influencer marketing budget exceeds R&D",
+        "No published clinical trials on the AG1 formula",
+        "Claims to replace multiple supplements with one scoop"
+      ],
+      "claims_extracted": [
+        "Foundational nutrition in one scoop",
+        "Supports gut health, immunity, energy, and recovery",
+        "75 vitamins, minerals, and whole food ingredients",
+        "Replaces multiple supplements"
+      ],
+      "evidence_check": "AG1 contains 75 ingredients at undisclosed individual doses. No published clinical trials exist on the AG1 formula itself. Individual ingredients (probiotics, B vitamins, adaptogens) have varying evidence, but the \"kitchen sink\" approach makes it impossible to verify therapeutic doses. The $99/month price point is among the highest in the greens powder category.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "No published clinical trials on AG1 formula",
+        "Examine.com: AG1 ingredient analysis",
+        "FTC guidelines on supplement claims"
+      ],
+      "verdict_summary": "Premium-priced 75-ingredient blend with no clinical trials. Impossible to verify therapeutic doses. Heavy influencer marketing."
+    },
+    {
+      "id": 52,
+      "url": "https://www.gaia-herbs.com/products/ashwagandha",
+      "domain": "gaiaherbs.com",
+      "product_name": "Gaia Herbs Ashwagandha Root",
+      "category": "Adaptogens",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 60,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Broad wellness claims from single herb",
+        "Adaptogen category lacks FDA definition",
+        "Individual response highly variable",
+        "Premium price for widely available herb"
+      ],
+      "claims_extracted": [
+        "Helps nourish and restore optimal nervous system health",
+        "Supports stress resilience",
+        "Supports a healthy response to stress",
+        "Adaptogenic herb for balance"
+      ],
+      "evidence_check": "Ashwagandha (Withania somnifera) has moderate clinical evidence for stress/cortisol reduction (several RCTs showing reduced cortisol and perceived stress). Gaia Herbs is transparent about sourcing and uses third-party testing. However, \"adaptogen\" is not an FDA-recognized category, and individual response varies significantly. Evidence quality is moderate but real.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "Chandrasekhar et al. (2012): Ashwagandha cortisol RCT",
+        "Examine.com: Ashwagandha evidence review",
+        "Gaia Herbs Meet Your Herbs transparency program"
+      ],
+      "verdict_summary": "Moderate clinical evidence for stress reduction. Transparent sourcing. \"Adaptogen\" label is marketing but the ingredient has real research."
+    },
+    {
+      "id": 51,
+      "url": "https://www.balanceof nature.com/fruits-veggies",
+      "domain": "balanceofnature.com",
+      "product_name": "Balance of Nature Fruits & Veggies",
+      "category": "General Wellness",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 18,
+      "verdict": "SCAM",
+      "red_flags": [
+        "FTC sued for deceptive advertising ($1.1M fine)",
+        "Claimed to treat/cure COVID-19, cancer, diabetes",
+        "No clinical evidence for any health claims",
+        "Dehydrated fruit/veggie capsules with no proven advantage over whole food",
+        "Aggressive upsell and subscription model"
+      ],
+      "claims_extracted": [
+        "Whole food supplement equivalent to fruits and vegetables",
+        "Supports immune system",
+        "Promotes overall health and wellness",
+        "Doctor recommended"
+      ],
+      "evidence_check": "FTC fined Balance of Nature $1.1M in 2023 for deceptive claims including that products could treat or cure COVID-19, cancer, and diabetes. Dehydrated fruit/veggie capsules have no proven nutritional advantage over simply eating fruits and vegetables. No peer-reviewed clinical trials.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC v. Balance of Nature (2023)",
+        "FDA: Dietary supplement regulations",
+        "No published clinical trials"
+      ],
+      "verdict_summary": "FTC fined $1.1M for claiming products treat COVID, cancer, and diabetes. No clinical evidence for any claims."
+    },
+    {
+      "id": 50,
+      "url": "https://www.prevagen.com/prevagen-regular-strength",
+      "domain": "prevagen.com",
+      "product_name": "Prevagen",
+      "category": "Nootropics",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 15,
+      "verdict": "SCAM",
+      "red_flags": [
+        "FTC and NY AG sued for deceptive advertising",
+        "Active ingredient (apoaequorin) is a jellyfish protein digested in stomach",
+        "Company's own clinical trial failed to show primary endpoint",
+        "Selectively reported sub-group results from failed trial",
+        "$60+/month for debunked supplement"
+      ],
+      "claims_extracted": [
+        "Improves memory",
+        "Clinically shown to help with mild memory problems",
+        "Supports brain function",
+        "#1 pharmacist recommended memory support brand"
+      ],
+      "evidence_check": "FTC and NY Attorney General sued Prevagen's maker (Quincy Bioscience) in 2017 for deceptive advertising. The company's own clinical trial failed its primary endpoint. Apoaequorin (jellyfish protein) is digested in the stomach and cannot cross the blood-brain barrier. Post-hoc sub-group analyses were cherry-picked from the failed trial.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC v. Quincy Bioscience (2017)",
+        "FDA warning letter to Quincy Bioscience",
+        "Madison Memory Study failed primary endpoint"
+      ],
+      "verdict_summary": "FTC lawsuit for deceptive advertising. Company's own trial failed. Active ingredient cannot reach the brain."
+    },
     {
       "id": 49,
       "url": "https://www.maryruthorganics.com/products/collagen-boosting-gummies",
