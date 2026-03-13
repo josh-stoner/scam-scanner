@@ -24,15 +24,19 @@
     const resultsCount = document.getElementById("results-count");
     const template = document.getElementById("product-card-template");
 
+    // Safe array accessor — always returns an array
+    function arr(val) { return Array.isArray(val) ? val : []; }
+
     // Fetch data
     fetch("data.json")
         .then(function (r) { return r.json(); })
         .then(function (data) {
-            allProducts = data.products;
+            allProducts = data.products || [];
             renderStats(data);
             render();
         })
-        .catch(function () {
+        .catch(function (err) {
+            console.error("Scam Scanner load error:", err);
             grid.textContent = "";
             var msg = document.createElement("div");
             msg.className = "no-results";
@@ -62,11 +66,12 @@
     });
 
     function renderStats(data) {
-        document.getElementById("stat-total").textContent = data.total;
-        document.getElementById("stat-avg-score").textContent = data.average_score;
+        var byVerdict = data.by_verdict || {};
+        document.getElementById("stat-total").textContent = data.total || 0;
+        document.getElementById("stat-avg-score").textContent = data.average_score || 0;
 
-        var scamCount = (data.by_verdict["SCAM"] || 0) + (data.by_verdict["LIKELY SCAM"] || 0);
-        var cautionCount = data.by_verdict["CAUTION"] || 0;
+        var scamCount = (byVerdict["SCAM"] || 0) + (byVerdict["LIKELY SCAM"] || 0);
+        var cautionCount = byVerdict["CAUTION"] || 0;
         document.getElementById("stat-scam").textContent = scamCount;
         document.getElementById("stat-caution").textContent = cautionCount;
     }
@@ -85,21 +90,21 @@
         if (currentSearch) {
             filtered = filtered.filter(function (p) {
                 var haystack = [
-                    p.product_name,
-                    p.category,
-                    p.domain,
-                    p.verdict
-                ].concat(p.red_flags, p.claims_extracted).join(" ").toLowerCase();
+                    p.product_name || "",
+                    p.category || "",
+                    p.domain || "",
+                    p.verdict || ""
+                ].concat(arr(p.red_flags), arr(p.claims_extracted)).join(" ").toLowerCase();
                 return haystack.includes(currentSearch);
             });
         }
 
         filtered.sort(function (a, b) {
             switch (currentSort) {
-                case "score-asc": return a.trust_score - b.trust_score;
-                case "score-desc": return b.trust_score - a.trust_score;
-                case "name-asc": return a.product_name.localeCompare(b.product_name);
-                case "date-desc": return b.date_evaluated.localeCompare(a.date_evaluated);
+                case "score-asc": return (a.trust_score || 0) - (b.trust_score || 0);
+                case "score-desc": return (b.trust_score || 0) - (a.trust_score || 0);
+                case "name-asc": return (a.product_name || "").localeCompare(b.product_name || "");
+                case "date-desc": return (b.date_evaluated || "").localeCompare(a.date_evaluated || "");
                 default: return 0;
             }
         });
@@ -140,10 +145,10 @@
         card.classList.add(verdictClass(product.verdict));
         card.classList.add(scoreClass(product.trust_score));
 
-        card.querySelector(".product-name").textContent = product.product_name;
-        card.querySelector(".trust-score").textContent = product.trust_score;
-        card.querySelector(".category-tag").textContent = product.category;
-        card.querySelector(".verdict-tag").textContent = product.verdict;
+        card.querySelector(".product-name").textContent = product.product_name || "Unknown Product";
+        card.querySelector(".trust-score").textContent = product.trust_score || 0;
+        card.querySelector(".category-tag").textContent = product.category || "";
+        card.querySelector(".verdict-tag").textContent = product.verdict || "";
 
         // Verdict summary
         var summary = card.querySelector(".verdict-summary");
@@ -154,17 +159,19 @@
         }
 
         // Red flags
+        var flags = arr(product.red_flags);
         var flagsList = card.querySelector(".red-flags-list");
-        if (product.red_flags.length) {
-            createListItems(flagsList, product.red_flags);
+        if (flags.length) {
+            createListItems(flagsList, flags);
         } else {
             card.querySelector(".red-flags-section").style.display = "none";
         }
 
         // Claims
+        var claims = arr(product.claims_extracted);
         var claimsList = card.querySelector(".claims-list");
-        if (product.claims_extracted.length) {
-            createListItems(claimsList, product.claims_extracted);
+        if (claims.length) {
+            createListItems(claimsList, claims);
         } else {
             card.querySelector(".claims-section").style.display = "none";
         }
@@ -178,9 +185,10 @@
         }
 
         // Sources
+        var sources = arr(product.sources);
         var sourcesList = card.querySelector(".sources-list");
-        if (product.sources.length) {
-            createListItems(sourcesList, product.sources);
+        if (sources.length) {
+            createListItems(sourcesList, sources);
         } else {
             card.querySelector(".sources-section").style.display = "none";
         }
@@ -193,11 +201,20 @@
             card.querySelector(".badge-fda").classList.add("visible");
         }
 
-        // Expand/collapse
+        // Expand/collapse — whole card is clickable
         var expandBtn = card.querySelector(".expand-btn");
-        expandBtn.addEventListener("click", function () {
+        function toggle() {
             card.classList.toggle("expanded");
             expandBtn.textContent = card.classList.contains("expanded") ? "Collapse" : "Details";
+        }
+        expandBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            toggle();
+        });
+        card.addEventListener("click", function (e) {
+            // Don't toggle if clicking a link or the form submit area
+            if (e.target.closest("a, button, input, textarea, select")) return;
+            toggle();
         });
 
         return clone;

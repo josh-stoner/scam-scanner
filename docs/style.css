@@ -181,6 +181,7 @@ main {
     overflow: hidden;
     transition: border-color 0.15s;
     position: relative;
+    cursor: pointer;
 }
 .product-card:hover { border-color: var(--text-muted); }
 .product-card.verdict-scam { border-left: 3px solid var(--red); }
