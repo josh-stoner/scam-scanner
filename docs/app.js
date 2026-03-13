@@ -1,6 +1,18 @@
 (function () {
     "use strict";
 
+    // Submit form handler
+    var submitForm = document.getElementById("submit-form");
+    var formSuccess = document.getElementById("form-success");
+    if (submitForm) {
+        submitForm.addEventListener("submit", function () {
+            setTimeout(function () {
+                submitForm.style.display = "none";
+                formSuccess.style.display = "block";
+            }, 500);
+        });
+    }
+
     let allProducts = [];
     let currentFilter = "all";
     let currentSearch = "";

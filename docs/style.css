@@ -373,17 +373,70 @@ main {
 }
 .cta-button:hover { opacity: 0.9; }
 
-.form-embed {
-    margin-top: 1.5rem;
-    border-radius: var(--radius);
-    overflow: hidden;
-    background: var(--surface);
+/* === Submit Form === */
+.submit-form {
+    max-width: 500px;
+    margin: 1.5rem auto 0;
+    text-align: left;
 }
-.form-embed iframe {
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
     display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.35rem;
+}
+.form-group .required {
+    color: var(--red);
+}
+.form-group .optional {
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.form-group input,
+.form-group textarea {
     width: 100%;
-    min-height: 500px;
+    padding: 0.7rem 0.9rem;
+    background: var(--bg);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius);
+    color: var(--text-bright);
+    font-size: 0.9rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-muted);
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+.submit-form .cta-button {
+    width: 100%;
     border: none;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 0.5rem;
+    padding: 0.8rem 2rem;
+}
+.form-success {
+    margin-top: 1.5rem;
+}
+.form-success p {
+    color: var(--green);
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 /* === Footer === */
