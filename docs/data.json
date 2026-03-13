@@ -1,13 +1,53 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 40,
-  "average_score": 10.2,
+  "total": 41,
+  "average_score": 10.4,
   "by_verdict": {
     "CAUTION": 8,
-    "LIKELY SCAM": 6,
+    "LIKELY SCAM": 7,
     "SCAM": 26
   },
   "products": [
+    {
+      "id": 41,
+      "url": "https://airestech.com/products/lifetune-zone",
+      "domain": "airestech.com",
+      "product_name": "Lifetune Zone",
+      "category": "EMF protection",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 15,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "EMF protection devices lack scientific evidence of health benefits",
+        "Extraordinary health claims: improved sleep, fertility, heart health, immunity, mental clarity",
+        "No plausible mechanism of action — passive silicon chip cannot restructure electromagnetic radiation",
+        "Celebrity/athlete EEG demonstrations presented as scientific evidence (not controlled studies)",
+        "Unverifiable claims: '25+ clinical trials', '9 peer-reviewed studies' with no links to publications",
+        "Pseudoscientific buzzwords: 'silicon resonator chip', 'restructures chaotic EMF radiation', 'biologically compatible form'",
+        "$260 for a 53mm chip with no power source, batteries, or active components"
+      ],
+      "claims_extracted": [
+        "Neutralizes harmful EMFs in spaces up to 93 feet diameter",
+        "Improves sleep quality",
+        "Reduces headaches and brain fog",
+        "Supports fertility and hormonal health",
+        "Supports heart health by reducing oxidative stress",
+        "Boosts immunity",
+        "Improves athletic reaction time and recovery",
+        "Powered by 16S5G Aires silicon resonator chip",
+        "Backed by 25+ clinical trials and 9 peer-reviewed studies",
+        "Works instantly with no batteries or power required"
+      ],
+      "evidence_check": "AiresTech claims 25+ clinical trials, 22 patents, 9 peer-reviewed studies, and $20M in R&D. The company is publicly traded. However, no specific study citations or links are provided on the product page. EEG 'demonstrations' shown are celebrity endorsements with a neuroscientist present, not controlled double-blind studies. The scientific consensus is that passive EMF 'protection' devices cannot neutralize or restructure electromagnetic radiation. The FTC has taken action against similar EMF protection product companies. Patents exist for the chip design but do not validate health claims.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "Product page: airestech.com/products/lifetune-zone",
+        "Scientific consensus: WHO states no evidence low-level EMF causes health effects",
+        "FTC precedent: actions against EMF shield/protection device companies"
+      ],
+      "verdict_summary": ""
+    },
     {
       "id": 40,
       "url": "https://airestech.com",
