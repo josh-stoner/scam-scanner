@@ -373,6 +373,19 @@ main {
 }
 .cta-button:hover { opacity: 0.9; }
 
+.form-embed {
+    margin-top: 1.5rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--surface);
+}
+.form-embed iframe {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    border: none;
+}
+
 /* === Footer === */
 footer {
     border-top: 1px solid var(--surface-border);
