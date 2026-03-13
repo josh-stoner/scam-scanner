@@ -104,7 +104,7 @@
                 case "score-asc": return (a.trust_score || 0) - (b.trust_score || 0);
                 case "score-desc": return (b.trust_score || 0) - (a.trust_score || 0);
                 case "name-asc": return (a.product_name || "").localeCompare(b.product_name || "");
-                case "date-desc": return (b.date_evaluated || "").localeCompare(a.date_evaluated || "");
+                case "date-desc": return (b.date_evaluated || "").localeCompare(a.date_evaluated || "") || (b.id || 0) - (a.id || 0);
                 default: return 0;
             }
         });
