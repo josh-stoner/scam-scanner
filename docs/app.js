@@ -1,3 +1,18 @@
+// Theme toggle
+(function () {
+    function apply(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    }
+    var btn = document.querySelector('.theme-toggle');
+    if (btn) {
+        btn.addEventListener('click', function () {
+            var current = document.documentElement.getAttribute('data-theme');
+            apply(current === 'dark' ? 'light' : 'dark');
+        });
+    }
+})();
+
 (function () {
     "use strict";
 
