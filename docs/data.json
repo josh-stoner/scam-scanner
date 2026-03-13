@@ -1,13 +1,49 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 62,
-  "average_score": 20.1,
+  "total": 63,
+  "average_score": 21.0,
   "by_verdict": {
     "CAUTION": 17,
     "LIKELY SCAM": 17,
+    "Mostly Legitimate": 1,
     "SCAM": 28
   },
   "products": [
+    {
+      "id": 63,
+      "url": "https://seed.com/daily-synbiotic",
+      "domain": "seed.com",
+      "product_name": "Seed DS-01 Daily Synbiotic",
+      "category": "Probiotics / Gut Health",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 72,
+      "verdict": "Mostly Legitimate",
+      "red_flags": [
+        "Subscription-first pricing model ($49.99/mo auto-renew)",
+        "Broad health claims beyond gut (skin, heart, immune) from a single probiotic",
+        "Heavy marketing language (\"feel the difference\", \"truly healthy gut\")",
+        "53.6 billion AFU count used as marketing differentiator without context"
+      ],
+      "claims_extracted": [
+        "Reduces bloating and gas",
+        "Improves regularity and digestive discomfort",
+        "Supports immune, skin, and heart health",
+        "24 strains, 53.6 billion AFU",
+        "Clinically tested in full formulation, randomized, placebo-controlled trials",
+        "ViaCap delivery system safeguards probiotics to the colon",
+        "Third-party tested for quality, pesticides, and allergens",
+        "Vegan and low FODMAP diet compatible"
+      ],
+      "evidence_check": "Stronger than most DTC supplements. Seed has published peer-reviewed research (including in journals like Gut Microbes) on their specific formulation. They cite clinical trials testing the full formulation rather than individual strain studies. The ViaCap delivery technology has some supporting evidence. However, broader claims about skin, heart, and immune health are extrapolated from general probiotic research rather than their specific product trials. The 24-strain, 53.6B AFU positioning is marketing-forward — more strains and higher counts do not necessarily mean better outcomes.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "seed.com/daily-synbiotic (product page, scraped via Safari bridge)",
+        "Published clinical trials referenced on seed.com/science",
+        "FDA standard supplement disclaimer present on page"
+      ],
+      "verdict_summary": "Seed DS-01 is one of the more evidence-backed probiotic supplements on the DTC market. They invest in actual clinical research on their full formulation (not just citing generic strain studies), which puts them ahead of most competitors. The FDA disclaimer is present. However, the breadth of health claims (gut + skin + heart + immune from one product), the subscription-first model, and heavy marketing language are worth noting. Trust score of 72 reflects: legitimate product with real science, but marketing outpaces the specific clinical evidence for some claims."
+    },
     {
       "id": 62,
       "url": "https://www.amazon.com/Vitamin-1000mg-Effervescent-Gluten-Free-Antioxidants/dp/B000WZI4WY",

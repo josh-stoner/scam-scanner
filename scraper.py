@@ -72,30 +72,41 @@ def scrape_page(url: str) -> dict:
     """
     url = normalize_url(url)
     scrape_method = "httpx"
-
-    with httpx.Client(headers=HEADERS, follow_redirects=True, timeout=20) as client:
-        resp = client.get(url)
-        resp.raise_for_status()
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-
-    # Remove noise
-    for tag in soup(["script", "style", "nav", "header", "footer", "iframe"]):
-        tag.decompose()
-
-    title = soup.title.string.strip() if soup.title and soup.title.string else ""
-
+    html = ""
+    title = ""
     meta_desc = ""
-    meta_tag = soup.find("meta", attrs={"name": "description"})
-    if meta_tag and meta_tag.get("content"):
-        meta_desc = meta_tag["content"].strip()
+    body_text = ""
+    lines = []
 
-    # Extract visible text
-    body_text = soup.get_text(separator="\n", strip=True)
-    lines = [line.strip() for line in body_text.splitlines() if line.strip()]
-    body_text = "\n".join(lines)
+    # Try httpx first; fall through to Safari on HTTP errors
+    try:
+        with httpx.Client(headers=HEADERS, follow_redirects=True, timeout=20) as client:
+            resp = client.get(url)
+            resp.raise_for_status()
+        html = resp.text
+    except httpx.HTTPStatusError:
+        html = ""
+    except httpx.RequestError:
+        html = ""
 
-    # If httpx returned minimal text, try Safari bridge fallback
+    if html:
+        soup = BeautifulSoup(html, "html.parser")
+
+        # Remove noise
+        for tag in soup(["script", "style", "nav", "header", "footer", "iframe"]):
+            tag.decompose()
+
+        title = soup.title.string.strip() if soup.title and soup.title.string else ""
+
+        meta_tag = soup.find("meta", attrs={"name": "description"})
+        if meta_tag and meta_tag.get("content"):
+            meta_desc = meta_tag["content"].strip()
+
+        body_text = soup.get_text(separator="\n", strip=True)
+        lines = [line.strip() for line in body_text.splitlines() if line.strip()]
+        body_text = "\n".join(lines)
+
+    # If httpx failed or returned minimal text, try Safari bridge
     if len(body_text) < MIN_TEXT_LENGTH:
         safari_text = _scrape_safari(url)
         if len(safari_text) > len(body_text):
@@ -118,6 +129,6 @@ def scrape_page(url: str) -> dict:
         "meta_description": meta_desc,
         "body_text": body_text[:15000],
         "disclaimers": disclaimers,
-        "raw_html_length": len(resp.text),
+        "raw_html_length": len(html),
         "scrape_method": scrape_method,
     }
