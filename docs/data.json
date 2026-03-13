@@ -1,13 +1,250 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 41,
-  "average_score": 10.4,
+  "total": 49,
+  "average_score": 15.1,
   "by_verdict": {
-    "CAUTION": 8,
-    "LIKELY SCAM": 7,
+    "CAUTION": 12,
+    "LIKELY SCAM": 11,
     "SCAM": 26
   },
   "products": [
+    {
+      "id": 49,
+      "url": "https://www.maryruthorganics.com/products/collagen-boosting-gummies",
+      "domain": "maryruthorganics.com",
+      "product_name": "MaryRuth's Collagen Boosting Gummies",
+      "category": "Collagen / Beauty",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 32,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "Claims \"boost collagen production\" without containing collagen",
+        "Plant-based product claiming collagen benefits with no mechanism",
+        "Vitamin C as \"collagen booster\" is misleading",
+        "Gummy format limits bioactive doses"
+      ],
+      "claims_extracted": [
+        "Boost your body's natural collagen production",
+        "Supports skin elasticity and joint health",
+        "Plant-based collagen alternative"
+      ],
+      "evidence_check": "Contains no collagen. Relies on vitamin C (a cofactor) and silica. Supplementing vitamin C does not increase collagen beyond normal in non-deficient people. Gummy format limits doses.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "NIH: Vitamin C and collagen synthesis",
+        "No clinical trials on formula"
+      ],
+      "verdict_summary": "Contains zero collagen but claims to \"boost collagen production.\" Relies on basic vitamin C as mechanism — misleading."
+    },
+    {
+      "id": 48,
+      "url": "https://www.vitalproteins.com/products/collagen-peptides",
+      "domain": "vitalproteins.com",
+      "product_name": "Vital Proteins Collagen Peptides",
+      "category": "Collagen / Beauty",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 52,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Collagen efficacy debated — digestion breaks down collagen",
+        "Claims \"maximum bioavailability\" without data",
+        "Broad claims from single product",
+        "Premium price for commodity ingredient"
+      ],
+      "claims_extracted": [
+        "Supports hair, skin, nails, bones, and joints",
+        "Grass-fed collagen",
+        "Maximum bioavailability",
+        "America's #1 Collagen Brand"
+      ],
+      "evidence_check": "Some evidence supports collagen peptides for skin hydration (small RCTs). Joint/bone/hair/nail evidence weaker. Transparent ingredients (20g/serving). Not a scam but overclaims.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "Choi et al. (2019): Collagen and skin",
+        "Examine.com: Collagen evidence"
+      ],
+      "verdict_summary": "Some evidence for skin; weaker for joints/hair/nails. Transparent ingredients but overclaims from a single protein."
+    },
+    {
+      "id": 47,
+      "url": "https://drinkpoppi.com/products/raspberry-rose",
+      "domain": "drinkpoppi.com",
+      "product_name": "Poppi Prebiotic Soda",
+      "category": "Gut Health",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 30,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "Class-action lawsuit (2024) over deceptive gut health claims",
+        "ACV amount too low for any clinical effect",
+        "Markets soda as health product",
+        "\"Prebiotic\" claim based on minimal 3g fiber"
+      ],
+      "claims_extracted": [
+        "Supports gut health with prebiotics",
+        "Apple cider vinegar for wellness",
+        "Healthier soda alternative"
+      ],
+      "evidence_check": "Faced class-action lawsuit in 2024 for misleading gut health claims. ACV per can far below clinical study amounts. 3g fiber is modest. Federal judge allowed lawsuit to proceed.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "Gisondi v. Poppi (class-action, 2024)",
+        "ACV clinical dose requirements"
+      ],
+      "verdict_summary": "Active class-action lawsuit over misleading gut health claims. ACV content too low for proven effect."
+    },
+    {
+      "id": 46,
+      "url": "https://www.elysiumhealth.com/products/basis",
+      "domain": "elysiumhealth.com",
+      "product_name": "Elysium Basis",
+      "category": "Anti-Aging / Longevity",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 55,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "NAD+ long-term effects in humans unclear",
+        "Nobel laureate board used as marketing signal",
+        "$65/month for unproven longevity claims",
+        "Conflates cellular studies with whole-body anti-aging"
+      ],
+      "claims_extracted": [
+        "NAD+ supplement for cellular aging",
+        "Clinically proven to increase NAD+ levels",
+        "Backed by Nobel laureate advisory board"
+      ],
+      "evidence_check": "NR does increase NAD+ in humans (confirmed). Whether increased NAD+ translates to anti-aging outcomes is unproven. Published trials show NAD+ elevation but not clinical health outcomes.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "Dellinger et al. (2017) Nature Communications",
+        "NIH: NAD+ and aging",
+        "Examine.com: NR"
+      ],
+      "verdict_summary": "Legitimate science behind NAD+ elevation, but leap to \"slows aging\" is unproven. Premium-priced for preliminary evidence."
+    },
+    {
+      "id": 45,
+      "url": "https://thegeniusbrand.com/products/genius-consciousness",
+      "domain": "thegeniusbrand.com",
+      "product_name": "Genius Consciousness",
+      "category": "Nootropics",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 35,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "Claims \"surge of cognitive enhancement\" exceeds evidence",
+        "Contains caffeine marketed as nootropic",
+        "No clinical trials on formula",
+        "Buzzword-heavy marketing"
+      ],
+      "claims_extracted": [
+        "Surge of focus, energy, and cognitive enhancement",
+        "Supports clarity, mood, and mental agility",
+        "Premium brain formula"
+      ],
+      "evidence_check": "Primary effect is likely caffeine (coffee fruit extract). Lion's Mane has preliminary animal studies only. No trials on this formula.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "NIH: Lion's Mane preliminary research",
+        "Caffeine as primary mechanism"
+      ],
+      "verdict_summary": "Caffeine-driven \"nootropic\" with overclaiming marketing. Perceived boost is likely just caffeine."
+    },
+    {
+      "id": 44,
+      "url": "https://www.onnit.com/alpha-brain",
+      "domain": "onnit.com",
+      "product_name": "Alpha BRAIN",
+      "category": "Nootropics",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 48,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Proprietary blends hide ingredient doses",
+        "Clinical trial small (63 participants) and company-funded",
+        "Celebrity endorsement over scientific rigor",
+        "$79.95 for modest evidence"
+      ],
+      "claims_extracted": [
+        "Supports memory, focus, and mental processing speed",
+        "Clinically studied nootropic",
+        "Helps with flow state and mental clarity"
+      ],
+      "evidence_check": "One published RCT (2016, 63 participants) showing modest verbal recall improvement. Company-funded. Proprietary blend prevents dose verification.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "Solomon et al. (2016) JINS: Alpha BRAIN RCT",
+        "Examine.com: Alpha BRAIN review"
+      ],
+      "verdict_summary": "One small company-funded trial shows modest effects. More evidence than most nootropics, but expectations inflated by marketing."
+    },
+    {
+      "id": 43,
+      "url": "https://neurohacker.com/shop/qualia-mind",
+      "domain": "neurohacker.com",
+      "product_name": "Qualia Mind 2.0",
+      "category": "Nootropics",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 42,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "$159/month retail for supplement blend",
+        "28-ingredient formula prevents efficacy verification",
+        "Claims results \"within days\"",
+        "75% first-order discount then steep price increase"
+      ],
+      "claims_extracted": [
+        "Boosts focus and concentration",
+        "Supports mood and motivation",
+        "Supports memory and long-term brain health"
+      ],
+      "evidence_check": "Some ingredients (Bacopa, Alpha-GPC) have modest evidence individually. 28-ingredient blend prevents therapeutic dose verification. No trials on formula itself.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "NIH: Bacopa monnieri studies",
+        "Examine.com: nootropic reviews"
+      ],
+      "verdict_summary": "Some ingredients have modest evidence, but proprietary 28-ingredient blend and $159/month price far exceed the evidence base."
+    },
+    {
+      "id": 42,
+      "url": "https://www.teamiblends.com/products/30-day-detox-pack",
+      "domain": "teamiblends.com",
+      "product_name": "Teami 30 Day Detox Pack",
+      "category": "Detox / Cleanse",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 20,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "FTC settlement in 2020 for deceptive health claims ($15.2M)",
+        "Claims to \"flush toxins\" with no mechanism",
+        "Uses laxative ingredients (senna) marketed as \"detox\"",
+        "Influencer-driven marketing with unsubstantiated claims",
+        "Subscription-first pricing obscures true cost"
+      ],
+      "claims_extracted": [
+        "Detox body of toxins in 30 days",
+        "Boost metabolism and energy",
+        "Support weight loss",
+        "Improve digestion and reduce bloating"
+      ],
+      "evidence_check": "Teami was fined $15.2M by FTC in 2020 for deceptive influencer marketing. Contains senna leaf (stimulant laxative) with dependency risk. \"Detox\" has no scientific basis.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC v. Teami LLC (2020)",
+        "FDA: No approved OTC detox supplements",
+        "NIH: Senna laxative warnings"
+      ],
+      "verdict_summary": "Previously fined $15.2M by FTC. \"Detox\" claims lack scientific basis. Contains laxatives marketed as wellness."
+    },
     {
       "id": 41,
       "url": "https://airestech.com/products/lifetune-zone",
