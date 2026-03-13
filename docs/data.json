@@ -1,13 +1,48 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 60,
-  "average_score": 19.3,
+  "total": 61,
+  "average_score": 20.0,
   "by_verdict": {
-    "CAUTION": 16,
+    "CAUTION": 17,
     "LIKELY SCAM": 16,
     "SCAM": 28
   },
   "products": [
+    {
+      "id": 61,
+      "url": "https://www.myclearup.com",
+      "domain": "myclearup.com",
+      "product_name": "ClearUP Sinus Pain Relief (Tivic Health)",
+      "category": "Bioelectronic Device",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 62,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Company discontinued product as of Jan 31, 2026 — no longer available for purchase",
+        "Microcurrent device for sinus relief is a niche claim with limited independent replication",
+        "\"88% experienced significant congestion relief\" from company-run trials",
+        "\"Bioelectronic technology is the future of medicine\" — aspirational marketing language",
+        "Device costs ~$150+ for modest symptom relief vs. OTC alternatives"
+      ],
+      "claims_extracted": [
+        "88% experienced significant congestion relief in clinical trials",
+        "97% found it easy to use",
+        "Provides up to 6 hours of sinus relief",
+        "No drugs, drowsiness, or lifetime of costs",
+        "FDA-cleared bioelectronic sinus device",
+        "Reduces symptoms of sinus pain, headache, and congestion"
+      ],
+      "evidence_check": "ClearUP is FDA 510(k) cleared (not FDA approved — important distinction). The company cites clinical trials showing 88% symptom relief, but these were company-sponsored and details on trial design, sample size, and control conditions are not prominently disclosed. Microcurrent therapy for sinus relief is plausible (low-level electrical stimulation has some evidence for pain modulation) but independent replication is limited. The device was discontinued Jan 2026, which raises questions about commercial viability. Not a scam — real FDA clearance and plausible mechanism — but claims outpace independent evidence.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "FDA 510(k) clearance for ClearUP",
+        "Company-sponsored clinical trials (details limited)",
+        "Microcurrent therapy: plausible mechanism, limited independent evidence",
+        "Product discontinued January 31, 2026"
+      ],
+      "verdict_summary": "FDA-cleared device with plausible mechanism, but company-sponsored trials and discontinuation raise concerns. Not a scam, but claims exceed independent evidence."
+    },
     {
       "id": 60,
       "url": "https://www.moonjuice.com/products/superyou",
