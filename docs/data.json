@@ -1,14 +1,52 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 64,
-  "average_score": 21.5,
+  "total": 65,
+  "average_score": 22.4,
   "by_verdict": {
     "CAUTION": 18,
+    "LEGIT": 1,
     "LIKELY SCAM": 17,
     "Mostly Legitimate": 1,
     "SCAM": 28
   },
   "products": [
+    {
+      "id": 65,
+      "url": "https://reliefband.com/collections/reliefband",
+      "domain": "reliefband.com",
+      "product_name": "Reliefband Anti-Nausea Wristband",
+      "category": "Health & Wellness Device",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 74,
+      "verdict": "LEGIT",
+      "red_flags": [
+        "Claims '60+ clinical trials' without linking to specific studies on product page",
+        "Some marketed use cases (migraines, anxiety, hangovers) lack peer-reviewed backing",
+        "Mixed Trustpilot reviews (3.2/5, 37% one-star ratings)",
+        "FDA 510(k) clearance marketed prominently — clearance is less rigorous than full FDA approval"
+      ],
+      "claims_extracted": [
+        "FDA-cleared for nausea and vomiting prevention/treatment",
+        "Drug-free, non-drowsy nausea relief",
+        "Uses transcutaneous electrical stimulation (TCES) on P6 acupuncture point",
+        "85% success rate in clinical trials",
+        "60+ clinical trials demonstrating efficacy",
+        "Effective for motion sickness, morning sickness, chemotherapy-induced nausea, post-surgery nausea",
+        "FSA/HSA eligible",
+        "14-day money-back guarantee"
+      ],
+      "evidence_check": "Reliefband has legitimate FDA 510(k) clearance (K182960) for nausea/vomiting from motion sickness, morning sickness, chemotherapy, and post-surgical use. Multiple peer-reviewed studies support efficacy for core claims — a 2003 clinical trial showed >50% reduction in vomiting and ~40% lower nausea severity. The underlying mechanism (P6 point neuromodulation via TCES) is well-documented in medical literature. However, broader marketing claims around migraines, anxiety, and hangovers lack equivalent peer-reviewed support. The company is BBB A+ accredited. Trustpilot reviews are mixed (3.2/5) suggesting variable individual results, which is typical for neuromodulation devices.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "https://www.accessdata.fda.gov/cdrh_docs/pdf18/K182960.pdf",
+        "https://illuminatelabs.org/blogs/health/reliefband-review",
+        "https://truthinadvertising.org/articles/reliefband-anti-nausea-wristband/",
+        "https://www.trustpilot.com/review/reliefband.com",
+        "https://www.reviewopedia.com/reliefband-reviews"
+      ],
+      "verdict_summary": "Reliefband is a legitimate FDA-cleared medical device for nausea relief with real clinical evidence supporting its core claims. The underlying TCES/P6 mechanism is well-documented. Minor concerns: some extended use-case marketing (migraines, hangovers) lacks peer-reviewed support, and customer satisfaction is mixed. Not a scam — this is a real product from an accredited company with genuine regulatory clearance."
+    },
     {
       "id": 64,
       "url": "https://bloomnu.com/products/sparkling-energy",
