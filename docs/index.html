@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scam Scanner — DTC Wellness Product Database</title>
+    <meta name="description" content="Search our database of wellness products evaluated for pseudoscience, hidden drugs, and deceptive marketing. Sourced from FDA, FTC, and TINA.org enforcement actions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">&#x1F50D;</span>
+                <h1>Scam Scanner</h1>
+            </div>
+            <p class="tagline">DTC wellness products evaluated for pseudoscience, hidden drugs, and deceptive marketing.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="stats-bar" id="stats-bar">
+            <div class="stat">
+                <span class="stat-number" id="stat-total">--</span>
+                <span class="stat-label">Products Evaluated</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="stat-avg-score">--</span>
+                <span class="stat-label">Avg Trust Score</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number stat-scam" id="stat-scam">--</span>
+                <span class="stat-label">Confirmed Scams</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number stat-caution" id="stat-caution">--</span>
+                <span class="stat-label">Use Caution</span>
+            </div>
+        </section>
+
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search products, brands, or categories..." autocomplete="off">
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn filter-scam" data-filter="SCAM">Scam</button>
+                <button class="filter-btn filter-likely" data-filter="LIKELY SCAM">Likely Scam</button>
+                <button class="filter-btn filter-caution" data-filter="CAUTION">Caution</button>
+                <button class="filter-btn filter-legit" data-filter="LEGIT">Legit</button>
+            </div>
+            <div class="sort-controls">
+                <select id="sort-select">
+                    <option value="score-asc">Score: Low to High</option>
+                    <option value="score-desc">Score: High to Low</option>
+                    <option value="name-asc">Name: A-Z</option>
+                    <option value="date-desc">Newest First</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="results-info">
+            <span id="results-count"></span>
+        </section>
+
+        <section class="product-grid" id="product-grid">
+            <div class="loading">Loading product database...</div>
+        </section>
+
+        <section class="submit-cta">
+            <h2>Know a suspicious product?</h2>
+            <p>Submit a URL and we'll evaluate it. Reports include claim extraction, red flag analysis, evidence checks, and FTC complaint readiness.</p>
+            <a href="https://github.com/josh-stoner/scam-scanner/issues/new?template=scan-request.yml&title=%5BSCAN%5D+Product+URL" class="cta-button" target="_blank" rel="noopener">Submit a Product for Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-method">
+                <strong>How it works:</strong> Products are scraped, analyzed by AI for pseudoscientific claims and red flags, then cross-referenced against FDA, FTC, and TINA.org enforcement databases. Trust scores reflect evidence quality, claim plausibility, and regulatory history.
+            </p>
+            <p class="footer-disclaimer">
+                This database is for informational purposes. It is not medical or legal advice. Evaluations are based on publicly available information from federal enforcement agencies and AI-assisted claim analysis.
+            </p>
+            <p class="footer-credit">
+                Built by <a href="https://josh-stoner.github.io" target="_blank" rel="noopener">Josh Stoner</a> with Claude Code.
+            </p>
+        </div>
+    </footer>
+
+    <template id="product-card-template">
+        <article class="product-card">
+            <div class="card-header">
+                <div class="card-title-row">
+                    <h3 class="product-name"></h3>
+                    <div class="trust-badge">
+                        <span class="trust-score"></span>
+                        <span class="trust-label">/100</span>
+                    </div>
+                </div>
+                <div class="card-meta">
+                    <span class="category-tag"></span>
+                    <span class="verdict-tag"></span>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="verdict-summary"></p>
+                <div class="card-section red-flags-section">
+                    <h4>Red Flags</h4>
+                    <ul class="red-flags-list"></ul>
+                </div>
+                <div class="card-section claims-section">
+                    <h4>Claims Made</h4>
+                    <ul class="claims-list"></ul>
+                </div>
+                <div class="card-section evidence-section">
+                    <h4>Evidence Check</h4>
+                    <p class="evidence-text"></p>
+                </div>
+                <div class="card-section sources-section">
+                    <h4>Sources</h4>
+                    <ul class="sources-list"></ul>
+                </div>
+                <div class="card-badges">
+                    <span class="badge badge-ftc" title="Meets threshold for FTC complaint">FTC Complaint Ready</span>
+                    <span class="badge badge-fda" title="FDA disclaimer present despite health claims">FDA Disclaimer Contradicted</span>
+                </div>
+            </div>
+            <button class="expand-btn" aria-label="Show details">Details</button>
+        </article>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>

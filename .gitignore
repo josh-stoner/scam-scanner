@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+scam_scanner.db
+scam_scanner_export.csv

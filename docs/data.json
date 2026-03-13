@@ -1,0 +1,962 @@
+{
+  "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
+  "total": 36,
+  "average_score": 7.1,
+  "by_verdict": {
+    "CAUTION": 5,
+    "LIKELY SCAM": 5,
+    "SCAM": 26
+  },
+  "products": [
+    {
+      "id": 36,
+      "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters#biowellness",
+      "domain": "biowellness444.com",
+      "product_name": "Silver Bullet Elite Douche / Silver D Elite Douche",
+      "category": "Vaginal health — colloidal silver",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Colloidal silver marketed to treat vaginal infections",
+        "Colloidal silver not recognized as safe or effective for ANY disease",
+        "Unapproved new drugs",
+        "FDA Warning Letter (May 2025)"
+      ],
+      "claims_extracted": [
+        "Treats vaginal infections"
+      ],
+      "evidence_check": "FDA Warning Letter May 2025. Colloidal silver is not generally recognized as safe or effective for any condition.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Warning Letter (May 2025) — Bio Wellness 444"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Warning Letter (May 2025) — Bio Wellness 444"
+    },
+    {
+      "id": 35,
+      "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters#evobio",
+      "domain": "evolutionarybiologics.com",
+      "product_name": "EXO RNA / EVO JEL / EVO HYBRID",
+      "category": "Biologic/supplement products",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 5,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Products qualify as unapproved new drugs",
+        "Unlicensed biological products",
+        "Website claims diagnose/cure/treat/prevent disease",
+        "FDA Warning Letter (April 2025)"
+      ],
+      "claims_extracted": [
+        "Products diagnose, cure, treat, or prevent disease"
+      ],
+      "evidence_check": "FDA Warning Letter April 2025. Products classified as unapproved new drugs and unlicensed biological products.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Warning Letter (April 2025) — Evolutionary Biologics"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Warning Letter (April 2025) — Evolutionary Biologics"
+    },
+    {
+      "id": 34,
+      "url": "https://www.herbalife.com",
+      "domain": "herbalife.com",
+      "product_name": "Herbalife product line (COVID claims)",
+      "category": "MLM supplement line",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 25,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "30+ documented instances of distributors claiming COVID-19 treatment/prevention",
+        "TINA.org alert to FTC",
+        "MLM structure enables uncontrolled health claims at distributor level"
+      ],
+      "claims_extracted": [
+        "Products treat and/or prevent COVID-19"
+      ],
+      "evidence_check": "TINA.org documented 30+ instances and alerted FTC. Distributor-level claims, not company-endorsed. No COVID treatment evidence.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "TINA.org — Herbalife COVID claims alert to FTC (2020-2021)"
+      ],
+      "verdict_summary": "Verified CAUTION — sourced from TINA.org — Herbalife COVID claims alert to FTC (2020-2021)"
+    },
+    {
+      "id": 33,
+      "url": "https://www.amberen.com",
+      "domain": "amberen.com",
+      "product_name": "Amberen (menopause supplement)",
+      "category": "Menopause supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 25,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Unsubstantiated claims",
+        "Part of TINA.org Oct 2024 sweep of 100 menopause supplement brands",
+        "TINA.org FTC/FDA complaint"
+      ],
+      "claims_extracted": [
+        "Menopause symptom relief"
+      ],
+      "evidence_check": "Part of TINA.org's October 2024 sweep targeting 100 menopause supplement brands. Complaint filed, not yet adjudicated.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "TINA.org FTC/FDA complaint (Oct 2024)"
+      ],
+      "verdict_summary": "Verified CAUTION — sourced from TINA.org FTC/FDA complaint (Oct 2024)"
+    },
+    {
+      "id": 32,
+      "url": "https://www.equelle.com",
+      "domain": "equelle.com",
+      "product_name": "Equelle (menopause supplement)",
+      "category": "Menopause supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 25,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Nearly 2,000 problematic health claims documented by TINA.org",
+        "Unsubstantiated menopause symptom relief claims",
+        "TINA.org FTC/FDA complaint (Oct 2024)"
+      ],
+      "claims_extracted": [
+        "Menopause symptom relief"
+      ],
+      "evidence_check": "TINA.org filed FTC + FDA complaint October 2024. Nearly 2,000 examples of problematic claims documented. Complaint filed, not yet adjudicated.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "TINA.org FTC/FDA complaint (Oct 2024) — Pharmavite"
+      ],
+      "verdict_summary": "Verified CAUTION — sourced from TINA.org FTC/FDA complaint (Oct 2024) — Pharmavite"
+    },
+    {
+      "id": 31,
+      "url": "https://www.nutrafol.com",
+      "domain": "nutrafol.com",
+      "product_name": "Nutrafol hair growth supplements",
+      "category": "Hair growth supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 30,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Deceptive disease/structure-function health claims",
+        "Inadequately disclosed influencer marketing",
+        "Subscription auto-renewal issues (ROSCA)",
+        "TINA.org complaint to FTC and FDA (2023)"
+      ],
+      "claims_extracted": [
+        "Hair growth supplement with clinical results"
+      ],
+      "evidence_check": "TINA.org complaint to FTC and FDA April 2023. Owned by Unilever. Some clinical evidence exists but marketing claims exceed what studies support.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "TINA.org complaint to FTC/FDA (April 2023)"
+      ],
+      "verdict_summary": "Verified CAUTION — sourced from TINA.org complaint to FTC/FDA (April 2023)"
+    },
+    {
+      "id": 30,
+      "url": "https://www.usana.com",
+      "domain": "usana.com",
+      "product_name": "USANA supplement line",
+      "category": "MLM supplement line",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 25,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Distributors claimed products prevent COVID-19, treat prostate cancer",
+        "Claims to reduce blood pressure, cancer risk, eliminate heart medications",
+        "USANA removed 50%+ of flagged claims after TINA.org letter"
+      ],
+      "claims_extracted": [
+        "Improve memory/focus",
+        "Prevent COVID-19",
+        "Treat prostate cancer",
+        "Prevent degenerative diseases",
+        "Reduce blood pressure and cancer risk"
+      ],
+      "evidence_check": "TINA.org letter prompted removal of 50%+ of flagged claims. Distributor-level claims, not always company-endorsed.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "TINA.org — USANA investigation (2022-2023)"
+      ],
+      "verdict_summary": "Verified CAUTION — sourced from TINA.org — USANA investigation (2022-2023)"
+    },
+    {
+      "id": 29,
+      "url": "https://www.modere.com",
+      "domain": "modere.com",
+      "product_name": "Modere supplement line",
+      "category": "MLM wellness supplements",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 20,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "Claimed to balance hormones, treat PMS/menopause",
+        "Atypical income claims in MLM marketing",
+        "TINA.org active investigation"
+      ],
+      "claims_extracted": [
+        "Balance hormones",
+        "Treat symptoms of PMS and menopause"
+      ],
+      "evidence_check": "TINA.org investigation (2022-2024). MLM structure with unsubstantiated health claims.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "TINA.org — Modere investigation"
+      ],
+      "verdict_summary": "Verified LIKELY SCAM — sourced from TINA.org — Modere investigation"
+    },
+    {
+      "id": 28,
+      "url": "https://goop.com",
+      "domain": "goop.com",
+      "product_name": "Goop (Jade Egg, Madame Ovary, wellness product line)",
+      "category": "Wellness supplements + lifestyle products",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 20,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "Vaginal eggs claimed to balance hormones, regulate menstrual cycles",
+        "Claimed to treat infertility (crystals), depression (tincture), cancer",
+        "$145K California AG settlement (2018)",
+        "Continued violations found post-settlement",
+        "TINA.org investigation"
+      ],
+      "claims_extracted": [
+        "Balance hormones",
+        "Regulate menstrual cycles",
+        "Prevent uterine prolapse",
+        "Increase bladder control",
+        "Treat infertility, depression, psoriasis, anxiety, cancer"
+      ],
+      "evidence_check": "California AG settlement 2018 ($145K). TINA.org found continued violations post-order. No evidence supporting crystal/egg health claims.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "TINA.org — Goop investigation; CA AG settlement (2018)"
+      ],
+      "verdict_summary": "Verified LIKELY SCAM — sourced from TINA.org — Goop investigation; CA AG settlement (2018)"
+    },
+    {
+      "id": 27,
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-sends-refunds-consumers-harmed-weight-loss-supplement-marketers-deceptive-claims-review-practices",
+      "domain": "rocalabs.com",
+      "product_name": "Roca Labs Gastric Bypass Alternative",
+      "category": "Weight loss supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 5,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Baseless weight loss claims",
+        "Fake 'independent' review website",
+        "Undisclosed financial ties to positive reviewers",
+        "FTC summary judgment + $409K refunds"
+      ],
+      "claims_extracted": [
+        "Gastric bypass alternative"
+      ],
+      "evidence_check": "FTC summary judgment 2018. $409,000+ in consumer refunds (sent 2025).",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC — Roca Labs (judgment 2018; refunds 2025)"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FTC — Roca Labs (judgment 2018; refunds 2025)"
+    },
+    {
+      "id": 26,
+      "url": "https://www.nextmed.com",
+      "domain": "nextmed.com",
+      "product_name": "NextMed Weight Loss Program",
+      "category": "Telemedicine weight-loss program",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 15,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "Deceptive claims about costs and results",
+        "Fake reviews",
+        "Fake testimonials",
+        "Hidden subscription terms",
+        "FTC settlement (2025)"
+      ],
+      "claims_extracted": [
+        "Deceptive claims about costs and weight loss results"
+      ],
+      "evidence_check": "FTC settlement July 2025. $150,000 in consumer refunds.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC — Southern Health Solutions / NextMed (2025)"
+      ],
+      "verdict_summary": "Verified LIKELY SCAM — sourced from FTC — Southern Health Solutions / NextMed (2025)"
+    },
+    {
+      "id": 25,
+      "url": "https://www.balanceofnature.com",
+      "domain": "balanceofnature.com",
+      "product_name": "Balance of Nature Fruits / Veggies / Fiber & Spice",
+      "category": "Fruit/vegetable supplement capsules",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 10,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Claimed to prevent/treat cancer, diabetes, heart disease, COVID-19",
+        "Unsubstantiated immune system boosting claims",
+        "FTC + FDA + TINA.org action",
+        "$1.1M settlement"
+      ],
+      "claims_extracted": [
+        "Can prevent/treat cancer, diabetes, heart disease, and COVID-19",
+        "Boosts immune system"
+      ],
+      "evidence_check": "FTC + FDA + TINA.org complaint. $1.1M settlement. Court order to stop manufacturing/distributing until FDA compliance.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC + FDA — Balance of Nature (2020-2023); Utah federal court order"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FTC + FDA — Balance of Nature (2020-2023); Utah federal court order"
+    },
+    {
+      "id": 24,
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2022/06/ftc-finalizes-order-banning-deceptive-marketing-supplement-seller",
+      "domain": "healthresearchlabs.com",
+      "product_name": "The Ultimate Heart Formula / BG18 / Black Garlic Botanicals / Neupathic",
+      "category": "Cardiovascular + neuropathy supplements",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Claimed to prevent/treat cardiovascular disease",
+        "Claimed to cure diabetic neuropathy",
+        "Permanently banned from selling supplements",
+        "FTC enforcement — final order 2022"
+      ],
+      "claims_extracted": [
+        "Prevents or treats cardiovascular disease",
+        "Cures/mitigates/treats diabetic neuropathy"
+      ],
+      "evidence_check": "FTC administrative complaint Nov 2020; final order June 2022. Permanently banned from advertising or selling dietary supplements.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC Final Order (June 2022) — Health Research Laboratories / Whole Body Supplements"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FTC Final Order (June 2022) — Health Research Laboratories / Whole Body Supplements"
+    },
+    {
+      "id": 23,
+      "url": "https://www.ftc.gov/news-events/topics/truth-advertising/health-claims#kushly",
+      "domain": "kushly.com",
+      "product_name": "Kushly CBD Products",
+      "category": "CBD supplements",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 10,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Unsubstantiated health claims for CBD products",
+        "Deceptive marketing practices",
+        "FTC enforcement action (2021)"
+      ],
+      "claims_extracted": [
+        "Unsubstantiated health and establishment claims for CBD products"
+      ],
+      "evidence_check": "FTC complaint May 2021. 576 consumers received refunds.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC — Kushly Industries LLC (2021)"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FTC — Kushly Industries LLC (2021)"
+    },
+    {
+      "id": 22,
+      "url": "https://www.teamiblends.com",
+      "domain": "teamiblends.com",
+      "product_name": "Teami 30 Day Detox Pack",
+      "category": "Detox/wellness tea",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 15,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "Unsubstantiated weight loss claims",
+        "Claims teas fight cancer, clear arteries, treat flu",
+        "Paid influencer endorsements without disclosure",
+        "FTC enforcement action (2020)"
+      ],
+      "claims_extracted": [
+        "Helps consumers lose weight",
+        "Fights cancer",
+        "Clears clogged arteries",
+        "Decreases migraines",
+        "Treats/prevents flu and colds"
+      ],
+      "evidence_check": "FTC lawsuit March 2020. Influencer disclosure requirements imposed. No evidence supporting disease treatment claims.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC — Teami LLC (2020)"
+      ],
+      "verdict_summary": "Verified LIKELY SCAM — sourced from FTC — Teami LLC (2020)"
+    },
+    {
+      "id": 21,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/152-3206-quincy-bioscience-holding-company",
+      "domain": "prevagen.com",
+      "product_name": "Prevagen",
+      "category": "Cognitive/memory supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 15,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "'Clinically shown' claims not substantiated",
+        "Seven-year FTC + NY AG litigation",
+        "Permanently barred from claiming memory improvement (Dec 2024)",
+        "Jellyfish protein has no plausible brain bioavailability"
+      ],
+      "claims_extracted": [
+        "Improves memory",
+        "Clinically shown to work",
+        "Results within 90 days",
+        "Supports healthy brain function",
+        "Sharper mind, clearer thinking"
+      ],
+      "evidence_check": "FTC + NY State AG seven-year case. Dec 2024 injunction permanently barring memory/cognition claims. No reliable scientific evidence found.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC Case 152-3206 — Quincy Bioscience; Dec 2024 injunction"
+      ],
+      "verdict_summary": "Verified LIKELY SCAM — sourced from FTC Case 152-3206 — Quincy Bioscience; Dec 2024 injunction"
+    },
+    {
+      "id": 20,
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/202-3146-x200051-golden-sunrise-nutraceutical-inc",
+      "domain": "goldensunrisenutraceutical.com",
+      "product_name": "ImunStem / Aktiffvate / AnterFeerons",
+      "category": "Supplement bundle — COVID/cancer 'treatment plan'",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Claimed to cure COVID-19, cancer, Parkinson's",
+        "Sold 'treatment plans' up to $23,000",
+        "Products were mainly herbs and spices",
+        "FTC enforcement action"
+      ],
+      "claims_extracted": [
+        "Disappearance of viral symptoms within 2-4 days",
+        "Treats/cures COVID-19, cancer, Parkinson's disease"
+      ],
+      "evidence_check": "FTC complaint + settlement. $103,420 in consumer refunds. Medical director barred from making similar claims.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC Case 202-3146 — Golden Sunrise Nutraceutical, Inc."
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FTC Case 202-3146 — Golden Sunrise Nutraceutical, Inc."
+    },
+    {
+      "id": 19,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/tainted-weight-loss-products#mixfruit",
+      "domain": "fda.gov",
+      "product_name": "Mix Fruit Slimming",
+      "category": "Weight loss supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drug: Phenolphthalein (carcinogen)",
+        "Marketed as '100% natural herbal' with 'no side effects'",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "100% natural herbal new slimming pill without any side effects"
+      ],
+      "evidence_check": "FDA lab analysis confirmed Phenolphthalein. Claim of 'no side effects' while containing a potential carcinogen.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Weight Loss Product Notifications"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Weight Loss Product Notifications"
+    },
+    {
+      "id": 18,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/public-notification-super-slim-contains-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "Super Slim",
+      "category": "Weight loss supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drug: Sibutramine",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Dietary supplement for weight loss"
+      ],
+      "evidence_check": "FDA lab analysis confirmed Sibutramine (withdrawn controlled substance).",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 17,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/public-notification-slimming-capsule-contains-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "Slimming Capsule",
+      "category": "Weight loss supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sibutramine + Phenolphthalein",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Slimming capsule dietary supplement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed Sibutramine and Phenolphthalein.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 16,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/fatzorb-may-be-harmful-due-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "FATZorb",
+      "category": "Weight loss supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sibutramine + Desmethyl Sibutramine + Benzyl Sibutramine + Phenolphthalein",
+        "FOUR hidden substances",
+        "Marketed as natural fat-burner",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Natural fat-burning supplement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed four hidden substances including Sibutramine variants and a potential carcinogen.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 15,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/lipofit-turbo-may-be-harmful-due-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "LipoFit Turbo",
+      "category": "Weight loss supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sibutramine + Metformin + Fluoxetine (Prozac) + Furosemide",
+        "FOUR hidden prescription drugs",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Weight loss dietary supplement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed four hidden prescription drugs including Prozac and a diuretic. Extremely dangerous.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 14,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/public-notification-body-shape-weight-loss-system-contains-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "Body Shape Weight Loss System",
+      "category": "Weight loss supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sibutramine (withdrawn) + Phenolphthalein (carcinogen)",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Weight loss system"
+      ],
+      "evidence_check": "FDA lab analysis confirmed Sibutramine (withdrawn controlled substance) and Phenolphthalein (potential carcinogen).",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 13,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud-notifications/sexual-enhancement-and-energy-product-notifications#xmax",
+      "domain": "fda.gov",
+      "product_name": "X Max Triple Shot Energy Honey",
+      "category": "Sexual enhancement supplement (honey)",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sildenafil and/or Tadalafil",
+        "Sold via Amazon",
+        "FDA warned Amazon directly (Dec 2023)",
+        "Disguised as honey product"
+      ],
+      "claims_extracted": [
+        "Energy honey supplement"
+      ],
+      "evidence_check": "FDA lab confirmed hidden prescription drugs. FDA warning letter to Amazon.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Warning Letter to Amazon (Dec 2023)"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Warning Letter to Amazon (Dec 2023)"
+    },
+    {
+      "id": 12,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud-notifications/sexual-enhancement-and-energy-product-notifications#wefun",
+      "domain": "fda.gov",
+      "product_name": "WeFun",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sildenafil and/or Tadalafil",
+        "Sold via Amazon",
+        "FDA warned Amazon directly (Dec 2023)"
+      ],
+      "claims_extracted": [
+        "Supplement"
+      ],
+      "evidence_check": "FDA lab confirmed hidden prescription drugs. FDA warning letter to Amazon.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Warning Letter to Amazon (Dec 2023)"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Warning Letter to Amazon (Dec 2023)"
+    },
+    {
+      "id": 11,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud-notifications/sexual-enhancement-and-energy-product-notifications",
+      "domain": "fda.gov",
+      "product_name": "MANNERS Energy Boost",
+      "category": "Sexual enhancement / energy supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drug: Sildenafil",
+        "Sold via Amazon",
+        "FDA warned Amazon directly (Dec 2023)",
+        "Misleading category: sold as energy supplement"
+      ],
+      "claims_extracted": [
+        "Energy supplement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed Sildenafil. FDA warning letter sent to Amazon Dec 2023.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Warning Letter to Amazon (Dec 2023)"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Warning Letter to Amazon (Dec 2023)"
+    },
+    {
+      "id": 10,
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/stuffbynainax-llc-issues-voluntary-nationwide-recall-mr7-super-700000-dietary-supplement-due",
+      "domain": "fda.gov",
+      "product_name": "MR.7 SUPER 700000",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sildenafil + Tadalafil",
+        "Subject to voluntary nationwide recall",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Dietary supplement"
+      ],
+      "evidence_check": "FDA Voluntary Nationwide Recall by StuffbyNainax LLC.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Recall Notice — StuffbyNainax LLC"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Recall Notice — StuffbyNainax LLC"
+    },
+    {
+      "id": 9,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/dynamite-male-sexual-enhancement-contains-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "DYNAMITE Male Sexual Enhancement",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden undisclosed prescription drug ingredients",
+        "Marketed as natural male enhancement",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Natural male enhancement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed undisclosed prescription drug ingredients.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 8,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/public-notification-rhino-se7en2-contains-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "Rhino SE7EN2",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sildenafil + Tadalafil",
+        "Marketed as natural dietary supplement",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Natural dietary supplement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed hidden Sildenafil and Tadalafil.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 7,
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/one-source-nutrition-inc-issues-voluntary-nationwide-recall-vitality-capsules-due-presence",
+      "domain": "fda.gov",
+      "product_name": "VITALITY Capsules",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sildenafil + Tadalafil",
+        "Subject to voluntary nationwide recall",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Dietary supplement"
+      ],
+      "evidence_check": "FDA Voluntary Nationwide Recall by One Source Nutrition, Inc.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Recall Notice — One Source Nutrition, Inc."
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Recall Notice — One Source Nutrition, Inc."
+    },
+    {
+      "id": 6,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/himgo-may-be-harmful-due-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "HimGo",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Sildenafil + Diclofenac (prescription NSAID)",
+        "Marketed as natural herbal supplement",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Natural herbal supplement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed hidden Sildenafil and Diclofenac. Diclofenac is a prescription NSAID — dangerous without medical supervision.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 5,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/special-edition-platinum-10k-contains-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "Special Edition Platinum 10K",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Tadalafil + Vardenafil",
+        "Marketed as dietary supplement",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Dietary supplement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed hidden Tadalafil (Cialis) and Vardenafil (Levitra).",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 4,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/platinum-69000-rhino-69-contains-hidden-drug-ingredient",
+      "domain": "fda.gov",
+      "product_name": "Platinum 69000 Rhino 69",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drug: Sildenafil",
+        "Marketed as natural supplement",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Natural supplement for male performance"
+      ],
+      "evidence_check": "FDA lab analysis confirmed hidden Sildenafil (Viagra).",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 3,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/endurea-contains-hidden-drug-ingredients",
+      "domain": "fda.gov",
+      "product_name": "ENDUREA",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drugs: Tadalafil + Sildenafil",
+        "Marketed as dietary supplement",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Dietary supplement for sexual performance"
+      ],
+      "evidence_check": "FDA lab analysis confirmed hidden Tadalafil (Cialis) and Sildenafil (Viagra).",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification"
+    },
+    {
+      "id": 2,
+      "url": "https://www.fda.gov/drugs/medication-health-fraud/schwinnng-contains-hidden-drug-ingredient",
+      "domain": "fda.gov",
+      "product_name": "Schwinnng",
+      "category": "Sexual enhancement supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 0,
+      "verdict": "SCAM",
+      "red_flags": [
+        "Hidden drug ingredient: Nortadalafil (unapproved tadalafil analog)",
+        "Marketed as natural supplement",
+        "FDA flagged"
+      ],
+      "claims_extracted": [
+        "Natural male sexual enhancement"
+      ],
+      "evidence_check": "FDA lab analysis confirmed hidden prescription drug ingredient. FDA Public Notification issued.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FDA Public Notification — Tainted Products Database"
+      ],
+      "verdict_summary": "Verified SCAM — sourced from FDA Public Notification — Tainted Products Database"
+    },
+    {
+      "id": 1,
+      "url": "https://theschumann.com",
+      "domain": "theschumann.com",
+      "product_name": "Schumann V2 Pro / V1 Classic / EMF Quantum Nano Shield Sticker",
+      "category": "Frequency/EMF device",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 12,
+      "verdict": "SCAM",
+      "red_flags": [
+        "No peer-reviewed studies cited",
+        "Quantum buzzword in product name (EMF Quantum Nano Shield Sticker)",
+        "Passive sticker claimed to emit frequencies — no physical mechanism",
+        "Unverifiable statistic: 94% report better sleep in week one (no methodology)",
+        "7.83 Hz wavelength is ~38,000 km — tabletop device cannot generate this",
+        "FDA disclaimer present while making health claims (sleep, focus, stress, nervous system)",
+        "Vague mechanism: scientifically-grounded electromagnetic frequencies",
+        "Bioenergetic state claims without definition",
+        "Uses NASA/Earth association for credibility without substance"
+      ],
+      "claims_extracted": [
+        "94% report better sleep in week one",
+        "Rewires your environment with scientifically-grounded electromagnetic frequencies",
+        "Gentle reset for the nervous system",
+        "Can significantly alter your bioenergetic state",
+        "Neutralize everyday EMF stress",
+        "Better sleep, reduced stress & enhanced focus",
+        "Dreams sharpen, stress eases, and focus comes easier",
+        "Sleep restores, clarity steadies, and energy renews"
+      ],
+      "evidence_check": "0 peer-reviewed studies cited on site. 1 tangentially related RCT exists (N=40, PMC9189153) but is small, unreplicated, and not cited by the brand. FCC certification is for electronics compliance, not health efficacy. No third-party health outcome testing.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "PMC9189153 — Schumann Resonance RCT (2022)",
+        "Skeptoid Episode 352",
+        "Hackaday — Schumann Resonance oscillator debunk (2023)",
+        "Scam Detector: 53/100",
+        "Trustpilot: 4.3/5 (97 reviews, placebo-consistent distribution)"
+      ],
+      "verdict_summary": "Exploits legitimate atmospheric science (Schumann resonance) to sell devices with no plausible physical mechanism. The EMF Quantum Nano Shield Sticker — a passive sticker claiming to emit frequencies — confirms the scientific rigor of the operation. Save your money."
+    }
+  ]
+}
