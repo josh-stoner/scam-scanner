@@ -1,14 +1,50 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 63,
-  "average_score": 21.0,
+  "total": 64,
+  "average_score": 21.5,
   "by_verdict": {
-    "CAUTION": 17,
+    "CAUTION": 18,
     "LIKELY SCAM": 17,
     "Mostly Legitimate": 1,
     "SCAM": 28
   },
   "products": [
+    {
+      "id": 64,
+      "url": "https://bloomnu.com/products/sparkling-energy",
+      "domain": "bloomnu.com",
+      "product_name": "Bloom Nutrition Sparkling Energy",
+      "category": "Energy Drinks / Functional Beverages",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 58,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Metabolism-boosting claims (\"kick-start metabolism\", \"burn calories more efficiently\") lack meaningful clinical support at these doses",
+        "Influencer-founded brand (Mari Llewellyn) — heavy social media marketing drives sales over evidence",
+        "Subscribe & Save model pushes recurring purchases",
+        "\"Bloom into your best self\" lifestyle branding obscures what the product actually does vs. any caffeinated drink",
+        "No specific dosages listed on product page for key ingredients (green tea extract, lychee, ginseng, L-theanine)",
+        "\"No artificial colors/flavors/aspartame\" framed as health benefit — standard for most modern energy drinks"
+      ],
+      "claims_extracted": [
+        "180mg natural caffeine from green coffee bean extract",
+        "Boosts metabolism via green tea and lychee extracts",
+        "Improves mental focus and mood via L-theanine and ginseng",
+        "Zero sugar, 10 calories per can",
+        "Contains prebiotics",
+        "No artificial colors, flavors, or aspartame",
+        "Energy without the crash"
+      ],
+      "evidence_check": "The caffeine claim (180mg from green coffee bean) is straightforward and will deliver energy — that part is honest. L-theanine paired with caffeine has decent evidence for focus and reducing jitter. However, the metabolism claims are the red flag: green tea extract can have modest thermogenic effects at high doses (400-500mg EGCG), but a single energy drink almost certainly contains a fraction of clinically effective doses. \"Burn calories more efficiently\" is a stretch. Lychee extract for metabolism has minimal human evidence. The product is essentially a flavored caffeinated sparkling water with some added ingredients at likely sub-clinical doses, wrapped in aspirational wellness branding. Not harmful, but the marketing significantly overpromises relative to what distinguishes it from any other zero-sugar energy drink.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "bloomnu.com/products/sparkling-energy (product page, scraped via httpx)",
+        "General clinical literature on green tea extract thermogenic effects",
+        "L-theanine + caffeine synergy research (Nutritional Neuroscience, 2008)"
+      ],
+      "verdict_summary": "Bloom Sparkling Energy is a zero-sugar caffeinated drink with wellness positioning. The caffeine and L-theanine combo is legit for energy and focus. But the metabolism-boosting claims (green tea, lychee) are almost certainly at sub-clinical doses and the \"burn calories more efficiently\" language overpromises. No FDA disclaimer visible on the product page despite structure/function-adjacent claims. The brand leans heavily on influencer marketing and lifestyle aspirations rather than ingredient transparency. Not harmful — just overmarketed for what amounts to a decent flavored energy drink."
+    },
     {
       "id": 63,
       "url": "https://seed.com/daily-synbiotic",
