@@ -1,13 +1,49 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 61,
-  "average_score": 20.0,
+  "total": 62,
+  "average_score": 20.1,
   "by_verdict": {
     "CAUTION": 17,
-    "LIKELY SCAM": 16,
+    "LIKELY SCAM": 17,
     "SCAM": 28
   },
   "products": [
+    {
+      "id": 62,
+      "url": "https://www.amazon.com/Vitamin-1000mg-Effervescent-Gluten-Free-Antioxidants/dp/B000WZI4WY",
+      "domain": "amazon.com (Airborne)",
+      "product_name": "Airborne 1000mg Vitamin C Effervescent Tablets",
+      "category": "Immune Support",
+      "date_evaluated": "2026-03-13",
+      "trust_score": 30,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "FTC settlement of $30M in 2008 for false advertising — claimed to prevent colds",
+        "Created by a schoolteacher, not a scientist — origin story used as marketing",
+        "1000mg Vitamin C exceeds evidence-based dosing (excess is excreted in urine)",
+        "Echinacea and herbal blend have weak/mixed evidence for immune support",
+        "\"#1 Immune Support Effervescent Tablet Brand\" is a market share claim, not efficacy claim",
+        "Mega-dose vitamin approach contradicts nutritional science consensus"
+      ],
+      "claims_extracted": [
+        "7 key immune nutrients in every serving",
+        "Powerful antioxidants to help fight free radicals",
+        "1000mg Vitamin C + 1500IU Vitamin D + Zinc",
+        "Herbal blend with Echinacea and Ginger for added wellness",
+        "#1 Immune Support Effervescent Tablet Brand",
+        "A blend you can trust"
+      ],
+      "evidence_check": "Airborne paid $30M to settle FTC charges in 2008 for falsely claiming its product could prevent colds and protect against germs in crowded spaces. The original \"clinical study\" was fabricated by a two-person company paid by Airborne. Vitamin C at 1000mg/day shows minimal-to-no benefit for cold prevention in well-nourished adults (Cochrane review). Excess vitamin C is excreted in urine. Vitamin D and Zinc have some immune evidence at adequate levels, but these are widely available in cheaper multivitamins. Echinacea evidence for cold prevention is weak and inconsistent.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "FTC v. Airborne Health Inc. ($30M settlement, 2008)",
+        "Cochrane Review: Vitamin C for preventing colds (2013)",
+        "NIH: Echinacea evidence is mixed/weak",
+        "Fabricated clinical study exposed (GNG Pharmaceutical Services — 2-person company)"
+      ],
+      "verdict_summary": "$30M FTC settlement for false advertising. Original \"clinical study\" was fabricated. Mega-dose Vitamin C has no proven cold prevention benefit in well-nourished adults."
+    },
     {
       "id": 61,
       "url": "https://www.myclearup.com",
