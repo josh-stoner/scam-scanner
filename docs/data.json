@@ -1,13 +1,146 @@
 {
   "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 36,
-  "average_score": 7.1,
+  "total": 40,
+  "average_score": 10.2,
   "by_verdict": {
-    "CAUTION": 5,
-    "LIKELY SCAM": 5,
+    "CAUTION": 8,
+    "LIKELY SCAM": 6,
     "SCAM": 26
   },
   "products": [
+    {
+      "id": 40,
+      "url": "https://airestech.com",
+      "domain": "airestech.com",
+      "product_name": "Aires Tech EMF Protection Devices",
+      "category": "EMF protection / radiation shield",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 10,
+      "verdict": "LIKELY SCAM",
+      "red_flags": [
+        "EMF 'protection' products have no scientifically validated mechanism of action",
+        "'Better than EMF blocking' — implies efficacy for a non-existent problem at consumer EMF levels",
+        "EMF radiation from consumer devices is non-ionizing and below established safety thresholds",
+        "No peer-reviewed studies demonstrating health benefits of EMF shielding at consumer device levels",
+        "Exploits EMF anxiety — a documented health anxiety pattern with no clinical basis",
+        "Products cannot meaningfully alter EMF exposure without also blocking the device's signal (defeating its purpose)"
+      ],
+      "claims_extracted": [
+        "#1 EMF/EMR Protection",
+        "Better than EMF blocking",
+        "EMF protection for your cell phone and digital lifestyle",
+        "Shield against EMF radiation"
+      ],
+      "evidence_check": "No credible scientific evidence that consumer-level EMF exposure from phones and WiFi causes health harm (per WHO, FDA, and FCC). EMF protection products cannot reduce exposure without also degrading device function. The entire product category is based on unfounded health anxiety. No peer-reviewed clinical trials demonstrating any health benefit from EMF shielding products.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": true,
+      "sources": [
+        "Aires Tech website (airestech.com)",
+        "WHO Fact Sheet: Electromagnetic Fields and Public Health",
+        "FDA: Do Cell Phones Pose a Health Hazard?"
+      ],
+      "verdict_summary": "Aires Tech sells EMF 'protection' devices based on unfounded claims that consumer EMF exposure is harmful. No credible evidence supports the product category. WHO, FDA, and FCC all confirm non-ionizing radiation from consumer devices is below safety thresholds. Classic pseudoscience product exploiting health anxiety."
+    },
+    {
+      "id": 39,
+      "url": "https://foursigmatic.com",
+      "domain": "foursigmatic.com",
+      "product_name": "Four Sigmatic Mushroom Coffee",
+      "category": "Mushroom coffee / supplements",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 48,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "'9 in 10 buyers say it works' — self-reported survey, not clinical evidence",
+        "'#1 in Consumer Satisfaction' — from brand-commissioned Mindsight study, not independent",
+        "Celebrity endorsements (Joe Rogan, Dr. Mark Hyman) as primary credibility",
+        "Focus, energy, gut health, immune support, stress support — five health claims from one product",
+        "'Next-level cognitive function' (Thomas DeLauer testimonial) — unsubstantiated superlative",
+        "300M+ cups served used as evidence of efficacy rather than popularity"
+      ],
+      "claims_extracted": [
+        "Mushroom coffee helps with focus, energy, gut health, immune support, stress support",
+        "9 in 10 Four Sigmatic buyers say it works",
+        "#1 in Consumer Satisfaction (Mindsight Brand Health Study 2024)",
+        "Powerful properties from reishi, lion's mane, chaga and cordyceps mushrooms",
+        "Next-level cognitive function"
+      ],
+      "evidence_check": "Similar to MUD\\WTR — functional mushroom extracts have some preclinical evidence but limited human clinical data at coffee-serving doses. The Mindsight study is brand-commissioned consumer research, not clinical evidence. Dr. Mark Hyman's quote is carefully worded ('contain powerful properties') but positioned to imply health benefits. No independent clinical trials cited for the product itself.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "Four Sigmatic website (foursigmatic.com)",
+        "Mindsight Brand Health Study 2024 (brand-commissioned)"
+      ],
+      "verdict_summary": "Four Sigmatic is a legitimate mushroom coffee brand with organic ingredients, but health claims (focus, immunity, gut health, stress support) are supported by brand-commissioned surveys and celebrity endorsements rather than clinical evidence. Not harmful, but marketing outpaces the science."
+    },
+    {
+      "id": 38,
+      "url": "https://mudwtr.com",
+      "domain": "mudwtr.com",
+      "product_name": "MUD\\WTR Mushroom Coffee",
+      "category": "Mushroom coffee alternative",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 50,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Focus and energy claims from mushroom extracts lack strong clinical evidence at consumer doses",
+        "'Clean energy without the crash' implies pharmacological effect without evidence",
+        "'Supports healthy gut' — vague, unsubstantiated structure/function claim",
+        "Influencer-heavy marketing (testimonials as primary evidence)",
+        "'Antioxidants to support immunity' — generic wellness claim",
+        "GET HIGH ON THE RIGHT SUPPLY — provocative marketing language"
+      ],
+      "claims_extracted": [
+        "Clean energy without the crash",
+        "Focus without the jitters",
+        "Supports healthy gut",
+        "Antioxidants to support immunity",
+        "Transform your mornings with functional mushrooms that support energy, focus, and wellbeing",
+        "California grown mushrooms, everything organic, no fillers"
+      ],
+      "evidence_check": "Functional mushrooms (lion's mane, reishi, chaga, cordyceps) have some preclinical and limited clinical evidence for cognitive and immune effects, but mostly at doses higher than what a coffee blend provides. MUD\\WTR is certified organic, which is verifiable. The product is essentially mushroom-infused coffee with lower caffeine — not harmful, but health claims exceed available evidence at consumer serving sizes.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "MUD\\WTR website (mudwtr.com)"
+      ],
+      "verdict_summary": "MUD\\WTR is a legitimate low-caffeine coffee alternative with organic mushroom extracts. Not harmful, but focus/energy/gut health claims are loosely supported at best. The product is more of a lifestyle brand than a health product — marketing significantly exceeds the science."
+    },
+    {
+      "id": 37,
+      "url": "https://athleticgreens.com",
+      "domain": "athleticgreens.com",
+      "product_name": "AG1 (Athletic Greens)",
+      "category": "Greens powder / nutritional supplement",
+      "date_evaluated": "2026-03-12",
+      "trust_score": 45,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Celebrity endorsements (Hugh Jackman, Andrew Huberman) as primary trust signals",
+        "'Clinically-backed formula' — cites 4 RCTs but only for nutrient gap filling, not specific health outcomes",
+        "'75+ ingredients' — quantity marketed as benefit; individual dosing unclear at that count",
+        "Immune defense and energy claims go beyond what nutrient supplementation evidence supports",
+        "50,000+ reviews prominently displayed — social proof over scientific proof",
+        "GLP-1 targeting suggests marketing to vulnerable health-seekers"
+      ],
+      "claims_extracted": [
+        "Clinically shown to fill common nutrient gaps even in healthy eaters",
+        "Supports energy, gut health, and immune defense",
+        "Four randomized, placebo-controlled trials supporting efficacy",
+        "Supports healthy gut microbiome function",
+        "Adaptogens help the body manage stress to support energy and vitality",
+        "NSF Certified for Sport"
+      ],
+      "evidence_check": "AG1 cites 4 RCTs, which is more evidence than most supplement brands. However, the studies show nutrient gap filling — not the broader health claims (immune defense, energy, stress support) used in marketing. NSF Certified for Sport is a legitimate third-party certification for purity. The gap between what the studies show and what the marketing implies is the core concern.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "AG1 website (athleticgreens.com)",
+        "NSF International certification"
+      ],
+      "verdict_summary": "AG1 has more clinical evidence than most supplements (4 RCTs, NSF certified), but marketing claims around energy, immunity, and stress go beyond what the studies actually demonstrate. Not a scam, but the celebrity-driven marketing overpromises relative to the science."
+    },
     {
       "id": 36,
       "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters#biowellness",
