@@ -75,7 +75,11 @@
         var filtered = allProducts;
 
         if (currentFilter !== "all") {
-            filtered = filtered.filter(function (p) { return p.verdict === currentFilter; });
+            if (currentFilter === "LEGIT") {
+                filtered = filtered.filter(function (p) { return p.verdict === "LEGIT" || p.verdict === "Mostly Legitimate"; });
+            } else {
+                filtered = filtered.filter(function (p) { return p.verdict === currentFilter; });
+            }
         }
 
         if (currentSearch) {
@@ -108,8 +112,9 @@
             case "SCAM": return "verdict-scam";
             case "LIKELY SCAM": return "verdict-likely-scam";
             case "CAUTION": return "verdict-caution";
-            case "LEGIT": return "verdict-legit";
-            default: return "";
+            case "LEGIT":
+            case "Mostly Legitimate": return "verdict-legit";
+            default: return "verdict-caution";
         }
     }
 
