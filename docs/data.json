@@ -1,15 +1,48 @@
 {
-  "generated": "/Users/stoner/Library/Mobile Documents/com~apple~CloudDocs/stonerOS/apps/scam-scanner/build_site.py",
-  "total": 65,
-  "average_score": 22.4,
+  "generated": "/Users/stoner/Developer/scam-scanner/build_site.py",
+  "total": 66,
+  "average_score": 23.0,
   "by_verdict": {
-    "CAUTION": 18,
+    "CAUTION": 19,
     "LEGIT": 1,
     "LIKELY SCAM": 17,
     "Mostly Legitimate": 1,
     "SCAM": 28
   },
   "products": [
+    {
+      "id": 66,
+      "url": "https://us.twosvge.com/collections/sunglasses/products/icon-white",
+      "domain": "us.twosvge.com",
+      "product_name": "TWO SVGE Icon - White Sunglasses",
+      "category": "Fashion Accessories",
+      "date_evaluated": "2026-03-15T23:43:07.653846+00:00",
+      "trust_score": 62,
+      "verdict": "CAUTION",
+      "red_flags": [
+        "Perpetual sale pricing ($67 to $47) creates artificial urgency",
+        "Generic/short customer reviews that could be manufactured",
+        "Stylized domain name (twosvge) makes brand verification harder",
+        "No physical address or company registration visible on product page",
+        "Extremely high 5-star ratio (88%) with some reviews lacking detail",
+        "Social media ad funnel URL parameters suggest paid acquisition"
+      ],
+      "claims_extracted": [
+        "Polarised lenses",
+        "UV 400 Protection",
+        "Category 3 lenses",
+        "Impact resistant build",
+        "V2 Frame engineered for maximum durability",
+        "30-day 100% satisfaction guarantee",
+        "Free worldwide tracked delivery",
+        "378 reviews"
+      ],
+      "evidence_check": "Physical product claims (UV 400, polarized, Category 3) are standard industry specs but not independently certified on-page. No third-party lab testing or certification logos. Australian DTC brand with US subdomain. Reviews reference real Australian cities. Price point reasonable for fashion sunglasses but permanent markdown is a pressure tactic.",
+      "fda_disclaimer_present": false,
+      "ftc_complaint_ready": false,
+      "sources": [],
+      "verdict_summary": "TWO SVGE appears to be a legitimate Australian DTC sunglasses brand, not a scam. Standard eyewear claims rather than dubious health claims. However, perpetual sale pricing, potentially manufactured reviews, and aggressive ad funnels erode trust. Not a scam, but premium may be overstated."
+    },
     {
       "id": 65,
       "url": "https://reliefband.com/collections/reliefband",
