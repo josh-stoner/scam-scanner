@@ -1,15 +1,44 @@
 {
   "generated": "/Users/stoner/Developer/scam-scanner/build_site.py",
-  "total": 66,
-  "average_score": 23.0,
+  "total": 67,
+  "average_score": 23.9,
   "by_verdict": {
     "CAUTION": 19,
-    "LEGIT": 1,
+    "LEGIT": 2,
     "LIKELY SCAM": 17,
     "Mostly Legitimate": 1,
     "SCAM": 28
   },
   "products": [
+    {
+      "id": 67,
+      "url": "https://www.amazon.com/Metamucil-Supplement-Gummies-Orange-Prebiotic/dp/B0BDP24LP4",
+      "domain": "amazon.com",
+      "product_name": "Metamucil Fiber Gummies (No Sugar Added, Orange, 120ct)",
+      "category": "Fiber / Prebiotic Supplement",
+      "date_evaluated": "2026-04-02T16:28:43.800288+00:00",
+      "trust_score": 85,
+      "verdict": "LEGIT",
+      "red_flags": [
+        "Uses asterisked health claims with FDA disclaimer hedge — standard for supplement category but still hedged marketing"
+      ],
+      "claims_extracted": [
+        "5g of plant-based prebiotic fiber per serving",
+        "Inulin fiber feeds good gut bacteria",
+        "Soluble Corn Fiber (Fibersol) supports digestive health",
+        "No sugar added",
+        "#1 selling fiber supplement brand"
+      ],
+      "evidence_check": "Metamucil is manufactured by Procter and Gamble, a major publicly traded CPG company with extensive regulatory compliance history. The active ingredients (inulin, soluble corn fiber/Fibersol) are well-studied prebiotic fibers with published research supporting digestive health benefits. Claims are modest and appropriate for the product category.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [
+        "Amazon product listing (ASIN: B0BDP24LP4)",
+        "Procter and Gamble (manufacturer)",
+        "FDA supplement disclaimer compliance"
+      ],
+      "verdict_summary": "Legitimate fiber supplement from a major manufacturer (Procter and Gamble). Claims are modest, well-supported by research on inulin and soluble corn fiber, and properly disclaimed. Strong consumer trust signals: 16K+ reviews, 4.5-star rating, Amazon Best Seller in category. No concerning red flags."
+    },
     {
       "id": 66,
       "url": "https://us.twosvge.com/collections/sunglasses/products/icon-white",
