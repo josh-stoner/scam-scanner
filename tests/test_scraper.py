@@ -20,8 +20,8 @@ def test_extract_domain(url, expected):
     ("https://example.com", "https://example.com"),
     ("https://example.com/", "https://example.com"),
     ("https://example.com/path/?q=1#f", "https://example.com/path/?q=1#f"),
-    ("", "https:"),
-    ("   ", "https:"),
+    ("", ""),
+    ("   ", ""),
     ("sub.example.com", "https://sub.example.com"),
 ])
 def test_normalize_url(url, expected):

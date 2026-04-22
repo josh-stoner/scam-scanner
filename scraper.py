@@ -35,6 +35,8 @@ def extract_domain(url: str) -> str:
 def normalize_url(url: str) -> str:
     """Ensure URL has scheme and strip trailing slash."""
     url = url.strip()
+    if not url:
+        return ""
     if not url.startswith(("http://", "https://")):
         url = "https://" + url
     return url.rstrip("/")
