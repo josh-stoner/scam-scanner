@@ -51,6 +51,12 @@ python scanner.py --sync-sheet       # Export CSV for Google Sheets
 python build_site.py    # Regenerates docs/data.json from SQLite
 ```
 
+## Testing
+
+```bash
+pytest tests/
+```
+
 ## Stack
 
 - **Backend**: Python, SQLite, httpx, BeautifulSoup
