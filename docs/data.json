@@ -1,15 +1,49 @@
 {
   "generated": "/Users/stoner/Developer/scam-scanner/build_site.py",
-  "total": 67,
-  "average_score": 23.9,
+  "total": 68,
+  "average_score": 24.7,
   "by_verdict": {
     "CAUTION": 19,
-    "LEGIT": 2,
+    "LEGIT": 3,
     "LIKELY SCAM": 17,
     "Mostly Legitimate": 1,
     "SCAM": 28
   },
   "products": [
+    {
+      "id": 68,
+      "url": "https://byloftie.com/products/loftiepm",
+      "domain": "byloftie.com",
+      "product_name": "LoftiePM",
+      "category": "Sleep supplement",
+      "date_evaluated": "2026-05-04",
+      "trust_score": 78,
+      "verdict": "LEGIT",
+      "red_flags": [
+        "Use of 'science-backed' marketing language without inline citations to specific studies on the page",
+        "Only 2 customer reviews shown (4.5 stars) — small sample size for social proof"
+      ],
+      "claims_extracted": [
+        "A balanced combination of natural ingredients to help you get your best night's sleep",
+        "Calms the mind, relaxes the body, and supports deep, restorative rest",
+        "Wake up feeling clear, refreshed, and ready for the day",
+        "Gentle, science-backed sleep support without the side effects of melatonin or over-the-counter sedatives",
+        "Melatonin-free, non-habit forming, no grogginess",
+        "Supports natural sleep rhythms",
+        "Vegan, Gluten-Free, Non-GMO",
+        "Developed alongside Loftie's medical advisor and longevity specialist, Dr. Poonam Desai, DO",
+        "L-Theanine helps ease mental tension and quiet racing thoughts",
+        "Magnesium Bisglycinate supports your nervous system, soothes the body, and helps release physical tension",
+        "Chamomile helps set the tone for sleep gently, naturally, and without side effects",
+        "Most melatonin supplements contain 3-10 times more than the body naturally produces, which can throw off your circadian rhythm",
+        "Magnesium has a similar physical effect to melatonin and helps you unwind quickly"
+      ],
+      "evidence_check": "No peer-reviewed citations are included on the product page. However, the three named active ingredients (L-theanine 100 mg, magnesium bisglycinate 250 mg, chamomile extract 100 mg) each have a real, modest body of clinical evidence for relaxation and sleep quality at the disclosed doses. A real, verifiable medical advisor is named (Dr. Poonam Desai, DO). Standard FDA disclaimer is present and the structure/function language stays within typical supplement-marketing bounds.",
+      "fda_disclaimer_present": true,
+      "ftc_complaint_ready": false,
+      "sources": [],
+      "verdict_summary": "Loftie PM is a conservatively formulated sleep supplement from an established brand, using three ingredients (L-theanine, magnesium bisglycinate, chamomile) with modest but real evidence at sensible doses. No drug-like claims, no pseudoscience triggers, real medical advisor, transparent label. Pricing is the only critique — you can replicate the formula with three generics for less."
+    },
     {
       "id": 67,
       "url": "https://www.amazon.com/Metamucil-Supplement-Gummies-Orange-Prebiotic/dp/B0BDP24LP4",

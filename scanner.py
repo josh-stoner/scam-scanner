@@ -1,10 +1,20 @@
 #!/usr/bin/env python3
 """Scam Scanner — DTC Wellness Product Evaluator.
 
-Usage:
-    python scanner.py <url>              Scan a product URL (cached if already evaluated)
-    python scanner.py --rescan <url>     Force re-evaluation and compare to previous score
+Inference is performed by Claude Code, not the Anthropic SDK. A scan is a
+two-step pipeline:
+
+    1. python scanner.py --prepare <url>
+       Scrapes the URL, writes the analysis prompt + page data to .scan-cache/,
+       and prints next-step instructions.
+
+    2. python scanner.py --finalize <url>
+       Reads the matching analysis JSON Claude Code wrote to .scan-cache/,
+       saves the evaluation to SQLite, syncs to Sheets, and prints the verdict.
+
+Other commands:
     python scanner.py --lookup <url>     Check if URL was already evaluated
+    python scanner.py --rescan <url>     Re-prepare a URL (forces fresh scrape)
     python scanner.py --stats            Show database stats
     python scanner.py --list             List all evaluations
     python scanner.py --export           Export all evaluations as JSON
@@ -13,26 +23,43 @@ Usage:
 
 import sys
 import json
+import hashlib
 from datetime import datetime, timezone
+from pathlib import Path
 
 from scraper import scrape_page, normalize_url, extract_domain
-from analyzer import analyze_page
-from db import lookup_url, lookup_domain, save_evaluation, get_all_evaluations, get_stats
+from analyzer import build_prompt, parse_response
+from db import lookup_url, save_evaluation, get_all_evaluations, get_stats
+from config import PROJECT_DIR
+
+CACHE_DIR = PROJECT_DIR / ".scan-cache"
+
+
+def _slug(url: str) -> str:
+    return hashlib.sha1(url.encode("utf-8")).hexdigest()[:12]
+
+
+def _cache_paths(url: str) -> tuple[Path, Path, Path]:
+    CACHE_DIR.mkdir(exist_ok=True)
+    s = _slug(url)
+    return (
+        CACHE_DIR / f"pagedata-{s}.json",
+        CACHE_DIR / f"prompt-{s}.txt",
+        CACHE_DIR / f"analysis-{s}.json",
+    )
 
 
 def format_verdict(eval_data: dict) -> str:
-    """Format an evaluation for terminal display."""
     score = eval_data.get("trust_score", "?")
     verdict = eval_data.get("verdict", "UNKNOWN")
 
-    # Color coding for terminal
     if isinstance(score, int):
         if score >= 70:
-            color = "\033[92m"  # green
+            color = "\033[92m"
         elif score >= 40:
-            color = "\033[93m"  # yellow
+            color = "\033[93m"
         else:
-            color = "\033[91m"  # red
+            color = "\033[91m"
     else:
         color = "\033[0m"
     reset = "\033[0m"
@@ -53,12 +80,10 @@ def format_verdict(eval_data: dict) -> str:
         f"",
     ]
 
-    # Verdict summary
     if eval_data.get("verdict_summary"):
         lines.append(f"  {eval_data['verdict_summary']}")
         lines.append("")
 
-    # Red flags
     red_flags = eval_data.get("red_flags", [])
     if isinstance(red_flags, str):
         red_flags = json.loads(red_flags)
@@ -68,7 +93,6 @@ def format_verdict(eval_data: dict) -> str:
             lines.append(f"    - {flag}")
         lines.append("")
 
-    # Claims
     claims = eval_data.get("claims_extracted", [])
     if isinstance(claims, str):
         claims = json.loads(claims)
@@ -78,13 +102,11 @@ def format_verdict(eval_data: dict) -> str:
             lines.append(f"    - {claim}")
         lines.append("")
 
-    # Evidence
     if eval_data.get("evidence_check"):
         lines.append(f"  EVIDENCE CHECK:")
         lines.append(f"    {eval_data['evidence_check']}")
         lines.append("")
 
-    # FTC
     if eval_data.get("ftc_complaint_ready"):
         lines.append(f"  \033[93mFTC COMPLAINT READY\033[0m")
         if eval_data.get("ftc_complaint_basis"):
@@ -95,34 +117,54 @@ def format_verdict(eval_data: dict) -> str:
     return "\n".join(lines)
 
 
-def scan_url(url: str, rescan: bool = False) -> dict:
-    """Full scan pipeline: check cache -> scrape -> analyze -> store -> return.
+def prepare_scan(url: str, force: bool = False) -> dict:
+    """Scrape URL and write the analysis prompt + page data to .scan-cache/.
 
-    If rescan=True, skips cache and forces a fresh evaluation.
-    The old score is preserved for comparison.
+    Returns the page_data dict. Prints next-step instructions for Claude Code.
     """
     url = normalize_url(url)
+    pagedata_path, prompt_path, analysis_path = _cache_paths(url)
 
-    # Check cache first (unless rescan forced)
     cached = lookup_url(url)
-    if cached and not rescan:
+    if cached and not force:
         print(f"\n  Found cached evaluation from {cached['date_evaluated']}")
         print(format_verdict(cached))
+        print(f"\n  To force a fresh scan: python scanner.py --rescan {url}")
         return cached
 
-    if cached and rescan:
-        print(f"\n  Re-scanning (previous: {cached['trust_score']}/100 on {cached['date_evaluated']})")
-
-    # Scrape
     print(f"\n  Scraping {url}...")
     page_data = scrape_page(url)
     print(f"  Extracted {len(page_data['body_text'])} chars, {len(page_data['disclaimers'])} disclaimers")
 
-    # Analyze
-    print(f"  Analyzing claims with {__import__('config').MODEL}...")
-    analysis = analyze_page(page_data)
+    pagedata_path.write_text(json.dumps(page_data, indent=2, default=str))
+    prompt_path.write_text(build_prompt(page_data))
 
-    # Build evaluation record
+    print(f"\n  Prompt:    {prompt_path}")
+    print(f"  Page data: {pagedata_path}")
+    print(f"\n  Next steps for Claude Code:")
+    print(f"    1. Read the prompt at the path above")
+    print(f"    2. Produce the analysis JSON and write it to:")
+    print(f"         {analysis_path}")
+    print(f"    3. Run: python scanner.py --finalize {url}")
+    return page_data
+
+
+def finalize_scan(url: str) -> dict:
+    """Load Claude Code's analysis JSON + cached page data, save to DB, display."""
+    url = normalize_url(url)
+    pagedata_path, _, analysis_path = _cache_paths(url)
+
+    if not pagedata_path.exists():
+        print(f"  No cached page data for {url}. Run --prepare first.")
+        sys.exit(1)
+    if not analysis_path.exists():
+        print(f"  No analysis at {analysis_path}.")
+        print(f"  Have Claude Code write the analysis JSON there, then re-run --finalize.")
+        sys.exit(1)
+
+    page_data = json.loads(pagedata_path.read_text())
+    analysis = parse_response(analysis_path.read_text())
+
     eval_data = {
         "url": url,
         "domain": extract_domain(url),
@@ -141,38 +183,20 @@ def scan_url(url: str, rescan: bool = False) -> dict:
         "analysis_json": json.dumps(analysis, indent=2),
     }
 
-    # Store
     save_evaluation(eval_data)
     print(f"  Saved to database.")
 
-    # Auto-sync to Google Sheet
     try:
         from sheets_sync import sync_single_row
         sync_single_row(eval_data)
     except Exception as e:
         print(f"  Sheet sync skipped: {e}")
 
-    # Display
-    # Merge analysis fields for display
     eval_data.update({
         "verdict_summary": analysis.get("verdict_summary", ""),
         "ftc_complaint_basis": analysis.get("ftc_complaint_basis", ""),
     })
     print(format_verdict(eval_data))
-
-    # Show score change on rescan
-    if cached and rescan:
-        old_score = cached.get("trust_score", "?")
-        new_score = eval_data.get("trust_score", "?")
-        old_verdict = cached.get("verdict", "?")
-        new_verdict = eval_data.get("verdict", "?")
-        if old_score != new_score or old_verdict != new_verdict:
-            print(f"\n  CHANGE DETECTED:")
-            print(f"    Score: {old_score} -> {new_score}")
-            print(f"    Verdict: {old_verdict} -> {new_verdict}")
-        else:
-            print(f"\n  No change from previous evaluation.")
-
     return eval_data
 
 
@@ -204,12 +228,6 @@ def main():
         evals = get_all_evaluations()
         print(json.dumps(evals, indent=2, default=str))
 
-    elif arg == "--rescan":
-        if len(sys.argv) < 3:
-            print("  Usage: python scanner.py --rescan <url>")
-            sys.exit(1)
-        scan_url(sys.argv[2], rescan=True)
-
     elif arg == "--lookup":
         if len(sys.argv) < 3:
             print("  Usage: python scanner.py --lookup <url>")
@@ -220,12 +238,31 @@ def main():
         else:
             print(f"\n  No evaluation found for {sys.argv[2]}")
 
+    elif arg == "--prepare":
+        if len(sys.argv) < 3:
+            print("  Usage: python scanner.py --prepare <url>")
+            sys.exit(1)
+        prepare_scan(sys.argv[2])
+
+    elif arg == "--rescan":
+        if len(sys.argv) < 3:
+            print("  Usage: python scanner.py --rescan <url>")
+            sys.exit(1)
+        prepare_scan(sys.argv[2], force=True)
+
+    elif arg == "--finalize":
+        if len(sys.argv) < 3:
+            print("  Usage: python scanner.py --finalize <url>")
+            sys.exit(1)
+        finalize_scan(sys.argv[2])
+
     elif arg == "--sync-sheet":
         from sheets_sync import full_sync_to_csv
         full_sync_to_csv()
 
     else:
-        scan_url(arg)
+        # Default: bare URL → run prepare step
+        prepare_scan(arg)
 
 
 if __name__ == "__main__":

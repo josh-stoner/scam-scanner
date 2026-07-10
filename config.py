@@ -7,9 +7,8 @@ from pathlib import Path
 PROJECT_DIR = Path(__file__).parent
 DB_PATH = PROJECT_DIR / "scam_scanner.db"
 
-# Anthropic
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-MODEL = "claude-sonnet-4-20250514"
+# Inference is performed by Claude Code (no API key needed).
+# See scanner.py --prepare / --finalize and analyzer.build_prompt().
 
 # Google Sheets (optional — falls back to SQLite-only if not configured)
 GOOGLE_SHEET_ID = os.environ.get("SCAM_SCANNER_SHEET_ID", "")

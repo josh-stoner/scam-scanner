@@ -3,4 +3,7 @@ __pycache__/
 .DS_Store
 .env
 scam_scanner.db
+scam_scanner.db-shm
+scam_scanner.db-wal
 scam_scanner_export.csv
+.scan-cache/

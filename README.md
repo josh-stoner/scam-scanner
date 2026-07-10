@@ -35,9 +35,18 @@ All seeded entries are sourced from federal enforcement actions (FDA Public Noti
 
 ## CLI Usage
 
+Inference runs through Claude Code (no Anthropic API key needed). A scan is two steps:
+
 ```bash
-python scanner.py <url>              # Scan a product URL
-python scanner.py --rescan <url>     # Force re-evaluation
+python scanner.py --prepare <url>    # Scrape + emit prompt to .scan-cache/
+# Then in Claude Code: read the prompt, write the analysis JSON to the indicated path.
+python scanner.py --finalize <url>   # Save evaluation to DB + sync sheet
+```
+
+Other commands:
+
+```bash
+python scanner.py --rescan <url>     # Force fresh scrape (re-prepare)
 python scanner.py --lookup <url>     # Check if already evaluated
 python scanner.py --stats            # Database stats
 python scanner.py --list             # List all evaluations
